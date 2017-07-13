@@ -208,8 +208,15 @@ a { text-decoration: none;}
 
 .subtitulo {
 	margin: 0 auto;
-	width: 500px;
-	border-bottom: 1px solid $font-negro-claro;
+	margin-bottom: 20px;
+	width: 390px;
+	border-bottom: 1.4px solid $font-negro-claro;
+	h4 {
+		font-size: 20px;
+		color: $font-negro-claro;
+		text-align: left;
+		margin: 0 0 5px 0;
+	}
 }
 
 .btn-numerico {
