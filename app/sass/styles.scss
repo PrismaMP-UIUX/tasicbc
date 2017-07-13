@@ -13,6 +13,7 @@ $blanco: #FFFFFF;
 $negro: #333333;
 $font-negro-claro: #50575C;
 $verde: #28A537;
+$gris: #6a6968;
 
 $background-click-btn-principal: #F8F8F8;
 $background-click-btn-salir: #020202;
@@ -79,12 +80,15 @@ $tabla_de_margenes:(
 	20,
 	25,
 	30,
+	40,
 	50,
 	75,
 	100,
 	125,
+	130,
 	150,
 	175,
+	200,
 	);
 
 @each $margen in $tabla_de_margenes {
@@ -308,13 +312,20 @@ a { text-decoration: none;}
 }
 
 .col-right {
-    width: 300px;
-    height: 550px;
-    float: right;
+	width: 300px;
+    height: 350px;
     position: absolute;
-    right: 0px;
-    top: 200px;
+    right: 0;
+    top: 275px;
     text-align: center;
+}
+
+.col-left {
+    width: 725px;
+    height: 400px;
+    position: absolute;
+    left: 50px;
+    top: 250px;
 }
 
 .btn-footer {
@@ -325,10 +336,10 @@ a { text-decoration: none;}
 	font-size: 22px;
 	float: right;
     box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
-    &:active {
-    	background-color: $background-click-btn-salir;
-    	box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
-		color: $blanco;
+	&:active {
+	color: $negro;
+	background-color: $background-click-btn-principal;
+	box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
 	}
 	&:nth-of-type(1) {
 		left: 525px;
