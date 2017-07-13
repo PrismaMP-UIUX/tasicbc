@@ -204,11 +204,12 @@ a { text-decoration: none;}
     	box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
 		color: $blanco;
     }
-	&:nth-of-type(1) {
-		position: absolute;
-		bottom: 25px;
-    	left: 50px;
-	}
+}
+
+.subtitulo {
+	margin: 0 auto;
+	width: 500px;
+	border-bottom: 1px solid $font-negro-claro;
 }
 
 .btn-numerico {
@@ -288,6 +289,7 @@ a { text-decoration: none;}
 
 .btn-verde {
 	@extend .btn-derecha;
+	bottom: 5px;
 	background-color: $verde;
 	color: $blanco;
 	font-family: $font-regular;
@@ -308,9 +310,31 @@ a { text-decoration: none;}
     text-align: center;
 }
 
+.btn-footer {
+	@extend .btn-salir;
+	color: $font-negro-claro;
+	background-color: $blanco;
+	font-family: $font-light;
+	font-size: 22px;
+	float: right;
+    box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+    &:active {
+    	background-color: $background-click-btn-salir;
+    	box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+		color: $blanco;
+	}
+	&:nth-of-type(1) {
+		left: 525px;
+	}
+	&:nth-of-type(2) {
+		left: 775px;
+		font-family: $font-medium;
+	}
+
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
 	height: 125px;
 }
-
