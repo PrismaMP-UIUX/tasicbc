@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+// Tamaños de pantalla
+$ancho_draw: 1024px;
+$centro_draw: $ancho_draw / 2;
+$alto_draw: 768px;
+
+// Colores
+$degrade_desde: #EFEFEE;
+$degrade_hasta: #FFFFFF;
+
+$blanco: #FFFFFF;
+$negro: #333333;
+$font-negro-claro: #50575C;
+$verde: #28A537;
+
+$background-click-btn-principal: #F8F8F8;
+$background-click-btn-salir: #020202;
+$background-click-btn-teclado-borrar: #D8D8D8;
+$background-click-btn-verde: #257F2D;
+
+// Fuentes
+$font-regular: "Roboto-Regular";
+$font-light: "Roboto-Light";
+$font-medium: "Roboto-Medium";
+$font-bold: "Roboto-Bold";
+
+$font-weight: 500;
+
+@font-face {
+ 	font-family: "Roboto-Regular";
+ 	src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: "Roboto-Light";
+ 	src: url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+	font-family: "Roboto-Medium";
+ 	src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+	font-family: "Roboto-Bold";
+ 	src: url("../fonts/Roboto-Bold.ttf");
+}
+
+// Clases para las diferentes fuentes 
+.font-regular {
+	font-family: $font-regular;
+}
+.font-light {
+	font-family: $font-light;
+}
+.font-medium {
+	font-family: $font-medium;
+}
+.font-bold {
+	font-family: $font-bold;
+}
+
+// Textos
+h1 { font-size: 36px; font-weight: $font-weight;}
+h2 { font-size: 30px; font-weight: $font-weight;}
+h3 { font-size: 24px; font-weight: $font-weight;}
+h4 { font-size: 18px; font-weight: $font-weight;}
+h5 { font-size: 14px; font-weight: $font-weight;}
+h6 { font-size: 12px; font-weight: $font-weight;}
+
+.centrado { text-align: center;}
+
+.interlineado { line-height: 1.5;}
+
+// Definiciones de márgenes
+$tabla_de_margenes:(
+	0,
+	5,
+	10,
+	15,
+	20,
+	25,
+	30,
+	50,
+	75,
+	100,
+	125,
+	150,
+	175,
+	);
+
+@each $margen in $tabla_de_margenes {
+	.mg-#{$margen} {margin: #{$margen}px;}
+	.mg-l-#{$margen} {margin-left: #{$margen}px;}
+	.mg-r-#{$margen} {margin-right: #{$margen}px;}
+	.mg-t-#{$margen} {margin-top: #{$margen}px}
+	.mg-b-#{$margen} {margin-bottom: #{$margen}px;}
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: $font-regular;
+	position: relative;
+	margin: 0 auto;
+	width: $ancho_draw;
+	height: $alto_draw;
+	color: $negro;
+}
+
+header {
+	height: 72px;
+	background-color: $blanco;
+	img {
+		position: absolute;
+    	top: 0px;
+		margin: auto;
+		display: block;
+		height: 72px;
+		left: calc(50% - 80px);
+	}
+}
+
+.fondo {
+	background: -webkit-linear-gradient($degrade_desde, $degrade_hasta); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($degrade_desde, $degrade_hasta); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($degrade_desde, $degrade_hasta); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($degrade_desde, $degrade_hasta); /* Standard syntax (must be last) */
+}
+
+.container {
+	height: 696px;
+	padding-left: 0;
+	padding-right: 0;
+	@extend .fondo;
+	&::before{
+     	display: table;
+     	content: " ";
+    }
+}
+
+a { text-decoration: none;}
+
+.btn {
+	display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+	border-color: transparent;
+	border-radius: 0;
+	position: relative;
+	p {
+		margin: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+}
+
+.btn-principal {
+	@extend .btn;
+	width: 255px;
+	height: 115px;
+	color: $negro;
+	font-size: 23px;
+	font-family: $font-bold;
+	background-color: $blanco;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+		background-color: $background-click-btn-principal;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+	&:nth-of-type(1) {
+		left: 13px;
+	}
+
+	&:nth-of-type(2) {
+		left: 0;
+	}
+
+	&:nth-of-type(3) {
+		left: -13px;
+	}
+	span {
+		font-size: 20px;
+	}
+}
+
+.btn-salir {
+	@extend .btn;
+	width: 196px;
+	height: 70px;
+	color: $blanco;
+	background-color: $negro;
+	font-size: 22px;
+	position: absolute;
+    bottom: 25px;
+    left: 50px;
+    box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+    &:active {
+    	background-color: $background-click-btn-salir;
+    	box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+		color: $blanco;
+    }
+	&:nth-of-type(1) {
+		position: absolute;
+		bottom: 25px;
+    	left: 50px;
+	}
+}
+
+.btn-numerico {
+	@extend .btn;
+	width: 73px;
+	height: 59px;
+	border-radius: 3px;
+	color: $negro;
+	font-size: 23px;
+	font-family: $font-bold;
+	background-color: $blanco;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+		background-color: $background-click-btn-principal;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+}
+
+.fila1,
+.fila2,
+.fila3, {
+	.btn-numerico {
+		&:nth-of-type(1) {
+			left: -15px;
+		}
+		&:nth-of-type(2) {
+			left: -5px;
+		}
+		&:nth-of-type(3) {
+			left: 5px;
+		}
+	}
+}
+
+.fila4, {
+	.btn-numerico {
+		&:nth-of-type(1) {
+			left: -10px;
+		}
+		&:nth-of-type(2) {
+			left: -5px;
+		}
+	}
+}
+
+
+.btn-teclado-borrar {
+	@extend .btn;
+	width: 169px;
+	height: 59px;
+	color: $negro;
+	border-radius: 3px;
+	background-color: $degrade_desde;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+    	background-color: $background-click-btn-teclado-borrar;
+    	box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+		color: $blanco;
+    }
+
+}
+
+.btn-derecha {
+	@extend .btn;
+	width: 196px;
+	height: 90px;
+	color: $font-negro-claro;
+	font-size: 23px;
+	font-family: $font-regular;
+	background-color: $blanco;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+		background-color: $background-click-btn-principal;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+}
+
+.btn-verde {
+	@extend .btn-derecha;
+	background-color: $verde;
+	color: $blanco;
+	font-family: $font-regular;
+	text-transform: uppercase;
+	&:active {
+		background-color: $background-click-btn-verde;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+}
+
+.col-right {
+    width: 300px;
+    height: 550px;
+    float: right;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	height: 125px;
+}
+
