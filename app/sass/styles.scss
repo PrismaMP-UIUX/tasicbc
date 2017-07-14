@@ -45,6 +45,27 @@ $font-weight: 500;
  	src: url("../fonts/Roboto-Bold.ttf");
 }
 
+@font-face {
+	font-family: 'typicons';
+	src: url("../fonts/typicons/typicons.eot");
+	src: url("../fonts/typicons/typicons.eot?#iefix") format('embedded-opentype'),
+	   url("../fonts/typicons/typicons.woff") format('woff'),
+	   url("../fonts/typicons/typicons.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/awesome/fontawesome-webfont.eot');
+	src: url('../fonts/awesome/fontawesome-webfont.eot') format('embedded-opentype'),
+		url('../fonts/awesome/fontawesome-webfont.woff2') format('woff2'),
+		url('../fonts/awesome/fontawesome-webfont.woff') format('woff'),
+		url('../fonts/awesome/fontawesome-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 // Clases para las diferentes fuentes 
 .font-regular {
 	font-family: $font-regular;
@@ -135,14 +156,13 @@ header {
 }
 
 .container {
-	height: 696px;
+	height: 571px;
 	padding-left: 0;
 	padding-right: 0;
 	@extend .fondo;
-	&::before{
-     	display: table;
-     	content: " ";
-    }
+	h4:first-of-type {
+		padding: 50px 0 0 50px;
+	}
 }
 
 a { text-decoration: none;}
@@ -215,11 +235,25 @@ a { text-decoration: none;}
 	margin-bottom: 20px;
 	width: 390px;
 	border-bottom: 1.4px solid $font-negro-claro;
-	h4 {
-		font-size: 20px;
+	input {
+		border-width: 0;
+	    border-style: none;
+	    border-color: transparent;
+	    border-image: none;
+		background-color: transparent;
+	    font-size: 20px;
+	    position: relative;
+	    left: -70px;
 		color: $font-negro-claro;
 		text-align: left;
 		margin: 0 0 5px 0;
+		&:focus {
+			outline-offset: 0;
+		    outline: none;
+		    outline-color: none;
+		    outline-style: none;
+		    outline-width: 0;
+		}
 	}
 }
 
@@ -266,7 +300,6 @@ a { text-decoration: none;}
 	}
 }
 
-
 .btn-teclado-borrar {
 	@extend .btn;
 	width: 169px;
@@ -285,6 +318,7 @@ a { text-decoration: none;}
 
 .btn-derecha {
 	@extend .btn;
+	top: 130px;
 	width: 196px;
 	height: 90px;
 	color: $font-negro-claro;
@@ -312,20 +346,19 @@ a { text-decoration: none;}
 }
 
 .col-right {
-	width: 300px;
-    height: 350px;
+    width: 300px;
+    height: 500px;
     position: absolute;
     right: 0;
-    top: 275px;
+    top: 150px;
     text-align: center;
 }
 
 .col-left {
-    width: 725px;
-    height: 400px;
-    position: absolute;
-    left: 50px;
-    top: 250px;
+	width: 725px;
+	height: 400px;
+	position: relative;
+	left: 50px;
 }
 
 .btn-footer {
@@ -348,11 +381,20 @@ a { text-decoration: none;}
 		left: 775px;
 		font-family: $font-medium;
 	}
-
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
+	position: relative;
 	height: 125px;
+}
+
+.fa-check {
+	color: $verde;
+}
+
+.typcn-backspace:before {
+    position: relative;
+    bottom: 3px;
+    font-size: 2em;
+    color: $gris;
 }

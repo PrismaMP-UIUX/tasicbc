@@ -23,7 +23,7 @@ gulp.task('styles', function() {
     return gulp.src(['app/**/*.scss', 'app/**/*.css'],{base:'app/sass'})
         .pipe(sass())
         .on('error', console.log)
-        .pipe(minifyCSS({compatibility: 'ie8'}))
+        // .pipe(minifyCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('../server/dist/'+config.name+'/css'))
         .pipe(browserSync.stream());
 });
