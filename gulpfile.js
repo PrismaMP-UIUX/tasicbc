@@ -75,4 +75,12 @@ gulp.task('serve', function() {
     gulp.watch('app/fonts/**/*', ['images']);
 });
 
+gulp.task('watch', function() {
+    gulp.watch(['app/**/*.js'], ['scripts']);
+    gulp.watch(['app/**/*.scss', 'app/**/*.css'], ['styles']);
+    gulp.watch(['app/**/*.html'], ['html']);
+    gulp.watch(config.images+'**/*', ['images']);
+    gulp.watch('app/fonts/**/*', ['images']);
+});
+
 gulp.task('default', ['scripts', 'styles', 'html', 'assets']);
