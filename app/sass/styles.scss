@@ -121,18 +121,16 @@ $font-weight: 500;
 } 
 
 // Clases para las diferentes fuentes 
-.font-regular {
-	font-family: $font-regular;
-}
-.font-light {
-	font-family: $font-light;
-}
-.font-medium {
-	font-family: $font-medium;
-}
-.font-bold {
-	font-family: $font-bold;
-}
+.font-regular {font-family: $font-regular;}
+.font-light {font-family: $font-light;}
+.font-medium {font-family: $font-medium;}
+.font-bold {font-family: $font-bold;}
+
+// Clases de Colores
+.negro {color: $negro;}
+.blanco {color: $blanco;}
+.verde {color: $verde;}
+.gris {color: $gris;}
 
 // Textos
 h1 { font-size: 36px; font-weight: $font-weight;}
