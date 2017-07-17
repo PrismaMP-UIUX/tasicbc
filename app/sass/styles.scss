@@ -146,6 +146,8 @@ h6 { font-size: 12px; font-weight: $font-weight;}
 
 .interlineado { line-height: 1.5;}
 
+.big-font { font-size: 50px;}
+
 // Definiciones de márgenes
 $tabla_de_margenes:(
 	0,
@@ -190,6 +192,8 @@ body {
 }
 
 header {
+	position: absolute;
+	width: 100%;
 	height: 72px;
 	background-color: $blanco;
 	img {
@@ -210,16 +214,20 @@ header {
 }
 
 .container {
-	height: 571px;
+	height: 643px;
 	padding-left: 0;
 	padding-right: 0;
 	@extend .fondo;
 	h4:first-of-type {
-		padding: 50px 0 0 50px;
+		padding: 100px 0 0 50px;
 	}
 }
 
 a { text-decoration: none;}
+
+.invisible {
+	visibility: hidden;
+}
 
 .btn {
 	display: inline-block;
@@ -284,10 +292,18 @@ a { text-decoration: none;}
     }
 }
 
-.subtitulo {
+.teclado-numerico {
+	position: absolute;
+    top: 0;
+    right: 120px
+}
+
+.input-teclado {
+	position: relative;
+	right: 5px;
 	margin: 0 auto;
 	margin-bottom: 20px;
-	width: 390px;
+	width: 275px;
 	border-bottom: 1.4px solid $font-negro-claro;
 	input {
 		border-width: 0;
@@ -297,7 +313,7 @@ a { text-decoration: none;}
 		background-color: transparent;
 	    font-size: 20px;
 	    position: relative;
-	    left: -70px;
+	    right: 15px;
 		color: $font-negro-claro;
 		text-align: left;
 		margin: 0 0 5px 0;
@@ -413,6 +429,49 @@ a { text-decoration: none;}
 	height: 400px;
 	position: relative;
 	left: 50px;
+	img {
+	    position: relative;
+	    top: -10px;
+	    left: -30px;
+	    width: 330px;
+
+	}
+	span {
+		color: $negro;
+	    position: absolute;
+	    left: 275px;
+	}
+	span.typcn {
+		left: -20px;
+    	top: -15px;
+	}
+}
+
+.columnas {
+	padding: 0 12px;
+	width: 100%;
+    height: 450px;
+    display: flex;
+	.col-1, .col-2, .col-3 {
+		float: left;
+		width: 31%;
+		text-align: center;
+		& .btn-principal:nth-of-type(1) {
+			left: 0;
+		}
+		& .btn-principal:nth-of-type(2) {
+			left: 0;
+		}
+		& .btn-principal:nth-of-type(3) {
+			left: 0;
+		}
+	}
+	.col-1 {
+		margin-left: 30px;
+	}
+	.col-3 {
+		margin-right: 30px;
+	}
 }
 
 .btn-footer {
