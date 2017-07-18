@@ -146,6 +146,10 @@ h6 { font-size: 12px; font-weight: $font-weight;}
 
 .big-font { font-size: 50px;}
 
+h4.subtitulo {
+	padding: 100px 0 0 50px;
+}
+
 // Definiciones de márgenes
 $tabla_de_margenes:(
 	0,
@@ -157,6 +161,7 @@ $tabla_de_margenes:(
 	30,
 	40,
 	50,
+	70,
 	75,
 	100,
 	125,
@@ -195,12 +200,12 @@ header {
 	height: 72px;
 	background-color: $blanco;
 	img {
-		position: absolute;
-    	top: 0px;
-		margin: auto;
-		display: block;
-		height: 72px;
-		left: calc(50% - 80px);
+	    position: absolute;
+	    top: 11px;
+	    margin: auto;
+	    display: block;
+	    height: 50px;
+	    left: calc(50% - 80px);
 	}
 }
 
@@ -216,9 +221,6 @@ header {
 	padding-left: 0;
 	padding-right: 0;
 	@extend .fondo;
-	h4:first-of-type {
-		padding: 100px 0 0 50px;
-	}
 }
 
 a { text-decoration: none;}
@@ -420,6 +422,11 @@ a { text-decoration: none;}
     right: 0;
     top: 150px;
     text-align: center;
+    img {
+    	position: relative;
+		top: 80px;
+    	right: 40px;
+    }
 }
 
 .col-left {
@@ -469,6 +476,12 @@ a { text-decoration: none;}
 	}
 	.col-3 {
 		margin-right: 30px;
+	}
+	.lista-cheques{
+		text-align: left;
+		h4:first-of-type {
+			padding: 0;
+		}
 	}
 }
 
