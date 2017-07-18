@@ -26,8 +26,13 @@ $font-light: "Roboto-Light";
 $font-medium: "Roboto-Medium";
 $font-bold: "Roboto-Bold";
 
+$font-gustan-medium: "Gustan-Medium";
+$font-gustan-light: "Gustan-Light";
+$font-gustan-bold: "Gustan-Bold";
+
 $font-weight: 500;
 
+//ROBOTO FONT
 @font-face {
  	font-family: "Roboto-Regular";
  	src: url("../fonts/roboto/Roboto-Regular.ttf");
@@ -43,6 +48,19 @@ $font-weight: 500;
 @font-face {
 	font-family: "Roboto-Bold";
  	src: url("../fonts/roboto/Roboto-Bold.ttf");
+}
+// GUSTAN FONT
+@font-face {
+	font-family: "Gustan-Light";
+ 	src: url("../fonts/gustan/._gustan-light-webfont.ttf");
+}
+@font-face {
+	font-family: "Gustan-Medium";
+ 	src: url("../fonts/gustan/._gustan-medium-webfont.ttf");
+}
+@font-face {
+	font-family: "Gustan-Bold";
+ 	src: url("../fonts/gustan/._gustan-bold-webfont.ttf");
 }
 
 @font-face {
@@ -63,6 +81,7 @@ $font-weight: 500;
   font-weight: normal;
   font-style: normal;
 }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -148,6 +167,18 @@ h6 { font-size: 12px; font-weight: $font-weight;}
 
 h4.subtitulo {
 	padding: 100px 0 0 50px;
+	font-family: $font-gustan-light;
+	font-weight: 200;
+}
+
+.titulo {
+	font-family: $font-gustan-medium;
+	font-weight: 500;
+}
+
+.titulo-bold {
+	font-family: $font-gustan-bold;
+	font-weight: 700;
 }
 
 // Definiciones de márgenes
@@ -205,7 +236,7 @@ header {
 	    margin: auto;
 	    display: block;
 	    height: 50px;
-	    left: calc(50% - 80px);
+	    left: calc(50% - 74px);
 	}
 }
 
