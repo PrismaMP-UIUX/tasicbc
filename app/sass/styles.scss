@@ -11,7 +11,7 @@ $degrade_hasta: #FFFFFF;
 
 $blanco: #FFFFFF;
 $negro: #333333;
-$font-negro-claro: #50575C;
+$negro-claro: #50575C;
 $verde: #28A537;
 $gris: #6a6968;
 
@@ -52,15 +52,38 @@ $font-weight: 500;
 // GUSTAN FONT
 @font-face {
 	font-family: "Gustan-Light";
- 	src: url("../fonts/gustan/gustan-light-webfont.ttf");
+    src: url('../fonts/gustan/gustanweb-light-webfont.eot');
+    src: url('../fonts/gustan/gustanweb-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gustan/gustanweb-light-webfont.woff2') format('woff2'),
+    url('../fonts/gustan/gustanweb-light-webfont.woff') format('woff'),
+    url('../fonts/gustan/gustanweb-light-webfont.ttf') format('truetype'),
+    url('../fonts/gustan/gustanweb-light-webfont.svg#webfontregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
 }
+
 @font-face {
 	font-family: "Gustan-Medium";
- 	src: url("../fonts/gustan/gustan-medium-webfont.ttf");
+    src: url('../fonts/gustan/gustanweb-medium-webfont.eot');
+    src: url('../fonts/gustan/gustanweb-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gustan/gustanweb-medium-webfont.woff2') format('woff2'),
+    url('../fonts/gustan/gustanweb-medium-webfont.woff') format('woff'),
+    url('../fonts/gustan/gustanweb-medium-webfont.ttf') format('truetype'),
+    url('../fonts/gustan/gustanweb-medium-webfont.svg#webfontregular') format('svg');
+    font-weight: 800;
+    font-style: normal;
 }
+
 @font-face {
 	font-family: "Gustan-Bold";
- 	src: url("../fonts/gustan/gustan-bold-webfont.ttf");
+    src: url('../fonts/gustan/gustanweb-bold-webfont.eot');
+    src: url('../fonts/gustan/gustanweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gustan/gustanweb-bold-webfont.woff2') format('woff2'),
+    url('../fonts/gustan/gustanweb-bold-webfont.woff') format('woff'),
+    url('../fonts/gustan/gustanweb-bold-webfont.ttf') format('truetype'),
+    url('../fonts/gustan/gustanweb-bold-webfont.svg#webfontregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
@@ -147,6 +170,7 @@ $font-weight: 500;
 
 // Clases de Colores
 .negro {color: $negro;}
+.negro-claro {color: $negro-claro;}
 .blanco {color: $blanco;}
 .verde {color: $verde;}
 .gris {color: $gris;}
@@ -169,6 +193,7 @@ h4.subtitulo {
 	padding: 100px 0 0 50px;
 	font-family: $font-gustan-light;
 	font-weight: 200;
+	color: $negro-claro;
 }
 
 .titulo {
@@ -335,7 +360,7 @@ a { text-decoration: none;}
 	margin: 0 auto;
 	margin-bottom: 20px;
 	width: 275px;
-	border-bottom: 1.4px solid $font-negro-claro;
+	border-bottom: 1.4px solid $negro-claro;
 	input {
 		border-width: 0;
 	    border-style: none;
@@ -345,7 +370,7 @@ a { text-decoration: none;}
 	    font-size: 20px;
 	    position: relative;
 	    right: 15px;
-		color: $font-negro-claro;
+		color: $negro-claro;
 		text-align: left;
 		margin: 0 0 5px 0;
 		&:focus {
@@ -422,7 +447,7 @@ a { text-decoration: none;}
 	top: 130px;
 	width: 196px;
 	height: 90px;
-	color: $font-negro-claro;
+	color: $negro-claro;
 	font-size: 23px;
 	font-family: $font-regular;
 	background-color: $blanco;
@@ -523,7 +548,7 @@ a { text-decoration: none;}
 
 .btn-footer {
 	@extend .btn-salir;
-	color: $font-negro-claro;
+	color: $negro-claro;
 	background-color: $blanco;
 	font-family: $font-light;
 	font-size: 22px;
