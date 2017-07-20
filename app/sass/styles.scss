@@ -78,8 +78,8 @@ $font-weight: 500;
 	font-family: "Gustan-Bold";
     src: url('../fonts/gustan/gustanweb-bold-webfont.eot');
     src: url('../fonts/gustan/gustanweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/gustan/gustanweb-bold-webfont.woff2') format('woff2'),
-    url('../fonts/gustan/gustanweb-bold-webfont.woff') format('woff'),
+    // url('../fonts/gustan/gustanweb-bold-webfont.woff2') format('woff2'),
+    // url('../fonts/gustan/gustanweb-bold-webfont.woff') format('woff'),
     url('../fonts/gustan/gustanweb-bold-webfont.ttf') format('truetype'),
     url('../fonts/gustan/gustanweb-bold-webfont.svg#webfontregular') format('svg');
     font-weight: bold;
@@ -126,6 +126,9 @@ $font-weight: 500;
 .fa-5x {
   font-size: 5em;
 }
+.fa-6x {
+  font-size: 6em;
+}
 .fa-check:before {
   content: "\f00c";
 }
@@ -143,23 +146,23 @@ $font-weight: 500;
  
 /* :before psuedo-selector inserts and styles icon */
 .typcn:before {
-  font-family: 'typicons';
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  height: 1em;
-  font-size: 1em;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+	font-family: 'typicons';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	height: 1em;
+	font-size: 1em;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
  
 .typcn-backspace:before { 
-  content: '\e029'; /* '' */
+	content: '\e029'; /* '' */
 } 
 
 // Clases para las diferentes fuentes 
@@ -178,18 +181,18 @@ $font-weight: 500;
 // Textos
 h1 { font-size: 37px; font-weight: $font-weight;}
 h2 { font-size: 32px; font-weight: $font-weight;}
-h3 { font-size: 24px; font-weight: $font-weight;}
-h4 { font-size: 20px; font-weight: $font-weight;}
-h5 { font-size: 14px; font-weight: $font-weight;}
+h3 { font-size: 27px; font-weight: $font-weight;}
+h4 { font-size: 25px; font-weight: $font-weight;}
+h5 { font-size: 20px; font-weight: $font-weight;}
 h6 { font-size: 12px; font-weight: $font-weight;}
 
 .centrado { text-align: center;}
 
 .interlineado { line-height: 1.5;}
 
-.big-font { font-size: 50px;}
+.big-font { font-size: 52px;}
 
-h4.subtitulo {
+h5.subtitulo {
 	padding: 100px 0 0 50px;
 	font-family: $font-gustan-light;
 	font-weight: 200;
@@ -215,12 +218,14 @@ $tabla_de_margenes:(
 	20,
 	25,
 	30,
+	35,
 	40,
 	45,
 	50,
 	60,
 	70,
 	75,
+	85,
 	100,
 	125,
 	130,
@@ -338,6 +343,7 @@ a { text-decoration: none;}
 	height: 70px;
 	color: $blanco;
 	background-color: $negro;
+	font-family: $font-medium;
 	font-size: 24px;
 	position: absolute;
     bottom: 25px;
@@ -457,7 +463,7 @@ a { text-decoration: none;}
 	width: 196px;
 	height: 90px;
 	color: $negro-claro;
-	font-size: 23px;
+	font-size: 24px;
 	font-family: $font-regular;
 	background-color: $blanco;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
@@ -474,11 +480,10 @@ a { text-decoration: none;}
 
 .btn-verde {
 	@extend .btn-derecha;
-	margin-top: 60px;
-	// bottom: 5px;
+	margin-top: 30px;
 	background-color: $verde;
 	color: $blanco;
-	font-family: $font-regular;
+	font-family: $font-bold;
 	text-transform: uppercase;
 	&:active {
 		background-color: $background-click-btn-verde;
@@ -493,11 +498,23 @@ a { text-decoration: none;}
     right: 0;
     top: 150px;
     text-align: center;
+    ///BORRAR UNA VEZ QUE SE REEMPLACEN///
+    ///////LAS IMAGENES POR VIDEOS ///////
     img {
     	position: relative;
 		top: 110px;
     	right: 40px;
     }
+    /////////////////////////////////////
+}
+
+.video {
+	position: absolute;
+	right: 45px;
+	top: 260px;
+	video {
+		width: 450px;
+	}
 }
 
 .col-left {
@@ -505,15 +522,15 @@ a { text-decoration: none;}
 	height: 400px;
 	position: relative;
 	left: 50px;
-	h4 {
+	h5 {
 		padding-top: 5px;
 	}
-	img {
-	    position: relative;
-	    top: 10px;
-	    left: -30px;
-	    width: 330px;
-	}
+	// img {
+	//     position: relative;
+	//     top: 10px;
+	//     left: -30px;
+	//     width: 330px;
+	// }
 	span {
 		color: $negro;
 	    position: absolute;
@@ -522,6 +539,39 @@ a { text-decoration: none;}
 	span.typcn {
 		left: -20px;
     	top: -15px;
+	}
+	.img-cheque {
+		position: relative;
+		right: 440px;
+		height: 320px;
+		img {
+		    position: relative;
+		    float: right;
+		    height: 100%;
+		}
+		.mascara-left {
+		    position: absolute;
+		    top: 0;
+		    right: 250px;
+		    height: 20%;
+		    width: 50%;
+		    background-color: rgba(28, 28, 27, 0.85);
+		}
+		.mascara-bottom {
+			position: absolute;
+		    bottom: 0;
+		    height: 80%;
+		    width: 100%;
+		    background-color: rgba(28, 28, 27, 0.85);
+		}
+	}
+	.video {
+		position: relative;
+    	left: -30px;
+    	top: 95px;
+		video {
+			width: 315px;
+		}
 	}
 }
 
@@ -552,7 +602,7 @@ a { text-decoration: none;}
 	}
 	.lista-cheques{
 		text-align: left;
-		h4:first-of-type {
+		h5:first-of-type {
 			padding: 0;
 		}
 	}
@@ -563,7 +613,7 @@ a { text-decoration: none;}
 	color: $negro-claro;
 	background-color: $blanco;
 	font-family: $font-light;
-	font-size: 22px;
+	font-size: 23.5px;
 	float: right;
     box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
@@ -572,7 +622,7 @@ a { text-decoration: none;}
 	box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
 	}
 	&:nth-of-type(1) {
-		left: 525px;
+		left: 540px;
 	}
 	&:nth-of-type(2) {
 		left: 775px;
@@ -591,13 +641,13 @@ footer {
 
 .typcn-backspace:before {
     position: relative;
-    bottom: 3px;
-    font-size: 2em;
+    bottom: 10px;
+    font-size: 2.5em;
     color: $gris;
 }
 
 // SPINNER 
-$rojo-icbc: red;
+$rojo-icbc: #AD1C1D;
 $width: 150px;
 
 body {
