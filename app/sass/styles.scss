@@ -144,7 +144,6 @@ $font-weight: 500;
        url('../fonts/typicons/typicons.svg#typicons') format('svg');
 }
  
-/* :before psuedo-selector inserts and styles icon */
 .typcn:before {
 	font-family: 'typicons';
 	font-style: normal;
@@ -184,7 +183,7 @@ h2 { font-size: 32px; font-weight: $font-weight;}
 h3 { font-size: 27px; font-weight: $font-weight;}
 h4 { font-size: 25px; font-weight: $font-weight;}
 h5 { font-size: 20px; font-weight: $font-weight;}
-h6 { font-size: 12px; font-weight: $font-weight;}
+h6 { font-size: 14px; font-weight: $font-weight;}
 
 .centrado { text-align: center;}
 
@@ -193,7 +192,8 @@ h6 { font-size: 12px; font-weight: $font-weight;}
 .big-font { font-size: 52px;}
 
 h5.subtitulo {
-	padding: 28px 0 0 50px;
+	margin: 0;
+	padding-top: 25px;
 	font-family: $font-gustan-light;
 	font-weight: 200;
 	color: $negro-claro;
@@ -288,6 +288,7 @@ header {
 }
 
 .encabezado {
+	padding: 0 50px;
     height: 121px;
     position: relative;
     top: 72px;
@@ -317,6 +318,7 @@ a { text-decoration: none;}
 
 .btn-principal {
 	@extend .btn;
+	margin-top: 55px;
 	width: 255px;
 	height: 115px;
 	color: $negro;
@@ -327,17 +329,6 @@ a { text-decoration: none;}
 	&:active {
 		background-color: $background-click-btn-principal;
 		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
-	}
-	&:nth-of-type(1) {
-		left: 13px;
-	}
-
-	&:nth-of-type(2) {
-		left: 0;
-	}
-
-	&:nth-of-type(3) {
-		left: -13px;
 	}
 	span {
 		font-size: 20px;
@@ -370,9 +361,6 @@ a { text-decoration: none;}
 }
 
 .input-teclado {
-	// position: relative;
-	// right: 5px;
-	// margin: 0 auto;
 	margin-bottom: 30px;
 	width: 350px;
 	border-bottom: 1.4px solid $negro-claro;
@@ -435,9 +423,6 @@ a { text-decoration: none;}
 		&:nth-of-type(1) {
 			left: -6px;
 		}
-		// &:nth-of-type(2) {
-		// 	left: -5px;
-		// }
 	}
 	.btn-teclado-borrar {
 		left: 5px;
@@ -484,7 +469,10 @@ a { text-decoration: none;}
 
 .btn-si-no {
 	@extend .btn-derecha;
+	margin: 30px;
+	margin-top: 25px;
 	top: 0;
+	left: 0;
 }
 
 .btn-verde {
@@ -501,45 +489,29 @@ a { text-decoration: none;}
 }
 
 .col-right {
-	width: 25%;
+	width: 256px;;
     height: 450px;
     position: relative;
     top: 72px;
     float: left;
-    ///BORRAR UNA VEZ QUE SE REEMPLACEN///
-    ///////LAS IMAGENES POR VIDEOS ///////
-    img {
-    	position: relative;
-		top: 110px;
-    	right: 40px;
-    }
-    /////////////////////////////////////
 }
 
 .video {
 	position: absolute;
 	right: 45px;
-	top: 265px;
+	top: 250px;
 	video {
 		width: 450px;
 	}
 }
 
 .col-left {
-	width: 75%;
+    width: 768px;
+    padding-left: 50px;
     height: 450px;
     position: relative;
     top: 72px;
     float: left;
-	h5 {
-		padding-top: 5px;
-	}
-	// img {
-	//     position: relative;
-	//     top: 10px;
-	//     left: -30px;
-	//     width: 330px;
-	// }
 	span {
 		color: $negro;
 	    position: absolute;
@@ -552,11 +524,16 @@ a { text-decoration: none;}
 	.img-cheque {
 		position: relative;
 		right: 440px;
-		height: 320px;
+		height: 310px;
 		img {
 		    position: relative;
-		    float: right;
+		    top: 0;
+		    right: 0;
 		    height: 100%;
+		}
+		.clip {
+			position: absolute;
+			clip: rect(0, 740px, 310px, 425px);
 		}
 		.mascara-left {
 		    position: absolute;
@@ -578,10 +555,17 @@ a { text-decoration: none;}
 	.video {
 		position: relative;
 		float: left;
-		left: 15px;
-		top: 150px;
+		left: -25px;
+		top: 110px;
 		video {
-			width: 315px;
+			width: 320px;
+		}
+	}
+	.columnas {
+		top: 0;
+		span {
+		    color: #333333;
+		    position: inherit;
 		}
 	}
 }
@@ -589,34 +573,31 @@ a { text-decoration: none;}
 .columnas {
     position: relative;
     top: 72px;
-    padding: 0 12px;
+    // padding: 0 12px;
     width: 100%;
     height: 450px;
 	.col-1, .col-2, .col-3 {
 		float: left;
-		width: 31%;
+		width: 33%;
 		text-align: center;
-		& .btn-principal:nth-of-type(1) {
-			left: 0;
-		}
-		& .btn-principal:nth-of-type(2) {
-			left: 0;
-		}
-		& .btn-principal:nth-of-type(3) {
-			left: 0;
-		}
 	}
 	.col-1 {
-		margin-left: 30px;
+		.btn-principal{
+			left: 40px;
+		}
+	}
+	.col-2 {
+		.btn-principal {
+			left: 0;
+		}
 	}
 	.col-3 {
-		margin-right: 30px;
+		.btn-principal {
+			left: -40px;
+		}
 	}
 	.lista-cheques{
 		text-align: left;
-		h5:first-of-type {
-			padding: 0;
-		}
 	}
 }
 
@@ -650,6 +631,7 @@ footer {
 }
 
 .fa-check {
+	margin-top: 25px;
 	color: $verde;
 }
 
@@ -670,7 +652,8 @@ body {
 
 .loader {
   position: relative;
-  margin: 175px auto;
+  margin: 0 auto;
+  margin-top: 75px;
   width: $width;
   &:before {
     content: '';
