@@ -1,0 +1,146 @@
+@@include('_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="img/logo.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Pagar servicios</h5>
+			<h1 class="titulo">Seleccioná la empresa que querés pagar.</h1>
+		</div>
+		<div class="slider">
+			<div class="slide1 columnas-servicios">
+				<div class="col-1">
+					<a href="#" class="btn btn-derecha">
+						<p>BAGSA</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Compañia Gas<br>Costa</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>ECOGAS<br>Cuyana</p>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="#" class="btn btn-derecha">
+						<p>Camuzzi Gas<br>del Sur</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Energía San<br>Luis Gas</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Emugas</p>
+					</a>
+				</div>
+				<div class="col-3">
+					<a href="#" class="btn btn-derecha">
+						<p>Camuzzi Gas<br>Pampeana</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Distrigas</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Energía San<br>Luis Gas</p>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="#" class="btn btn-derecha">
+						<p>Carlos Paz Gas</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>ECOGAS<br>Centro</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Gas<br>Junin</p>
+					</a>
+				</div>
+			</div>
+			<div class="slide2 columnas-servicios">
+				<div class="col-1">
+					<a href="#" class="btn btn-derecha">
+						<p>Gas Natural<br>Fenosa</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Litoral Gas</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Shell Gas</p>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="#" class="btn btn-derecha">
+						<p>Gas Nea</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Metrogas</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>YPF Gas</p>
+					</a>
+				</div>
+				<div class="col-3">
+					<a href="#" class="btn btn-derecha">
+						<p>Gasnor</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Proagas</p>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="#" class="btn btn-derecha">
+						<p>Hidrocarburos<br>Neuquén</p>
+					</a>
+					<a href="#" class="btn btn-derecha">
+						<p>Redengas</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="paginado centrado">
+			<hr>
+			<a id="left" href="#" class="btn btn-numerico invisible">
+				<p><i class="fa fa-1-5x fa-caret-left" aria-hidden="true"></i></p>
+			</a>
+			<span class="">Pagina <span>1</span> de <span>2</span></span>
+			<a id="right" href="#" class="btn btn-numerico">
+				<p><i class="fa fa-1-5x fa-caret-right" aria-hidden="true"></i></p>
+			</a>
+		</div>
+		<footer>
+			<a href="#" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+			<div>
+				<a href="#" class="btn btn-footer">
+					<p>Anterior</p>
+				</a>
+				<a href="#" class="btn btn-footer">
+					<p>Menú principal</p>
+				</a>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script>
+	////////////////////////////////////////////////////
+	///////////////////// SLIDER ///////////////////////
+	////////////////////////////////////////////////////
+		$( "#right" ).click(function() {
+			if ($("#left").hasClass("invisible")) {
+				$("#left").removeClass("invisible");
+			}
+			$(".slide1" ).animate({ "left": "-=1024px" }, "slow" );
+			$(".slide2" ).animate({ "left": "-=1024px" }, "slow" );
+			$("#right").toggleClass("invisible");
+		});
+		$( "#left" ).click(function(){
+			if ($("#right").hasClass("invisible")) {
+				$("#right").removeClass("invisible");
+			}
+			$(".slide1" ).animate({ "left": "+=1024px" }, "slow" );
+			$(".slide2" ).animate({ "left": "+=1024px" }, "slow" );
+			$("#left").toggleClass("invisible");
+		});
+	</script>
+</body>
+</html>

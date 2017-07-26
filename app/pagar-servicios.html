@@ -1,0 +1,98 @@
+@@include('_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="img/logo.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Pagar servicios</h5>
+			<h1 class="titulo">¿Qué servicio querés pagar?</h1>
+		</div>
+		<div class="slider">
+			<div class="slide1 columnas">
+				<div class="col-1">
+					<a href="#" class="btn btn-principal">
+						<p>Nuevo Servicio</p>
+					</a>
+					<a href="#" class="btn btn-principal">
+						<p>Personal<br><span class="font-light small-font">Mio<br><b>$323. </b>Vto: 26/04/17</span></p>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="#" class="btn btn-principal">
+						<p>Edenor<br><span class="font-light small-font">0019283721<br><b>$200. </b>Vto: 14/04/17</span></p>
+					</a>
+					<a href="#" class="btn btn-principal">
+						<p>Personal<br><span class="font-light small-font">Roberto<br><b>$500. </b>Vto: 26/04/17</span></p>
+					</a>
+				</div>
+				<div class="col-3">
+					<a href="#" class="btn btn-principal">
+						<p>Metrogas<br><span class="font-light small-font">Casa Abuela<br><b>$200. </b>Vto: 14/04/17</span></p>
+					</a>
+					<a href="#" class="btn btn-principal">
+						<p>Aysa<br><span class="font-light small-font">Mi casa<br><b>$150. </b>Vto: 24/04/17</span></p>
+					</a>
+				</div>
+			</div>
+			<div class="slide2 columnas">
+				<div class="col-1">
+					<a href="#" class="btn btn-principal">
+						<p>ABL<br><span class="font-light small-font">Mi casa<br><b>$250. </b>Vto: 17/04/17</span></p>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="#" class="btn btn-principal">
+						<p>Visa<br><span class="font-light small-font">Francés<br><b>$4050. </b>Vto: 14/04/17</span></p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="paginado centrado">
+			<hr>
+			<a id="left" href="#" class="btn btn-numerico invisible">
+				<p><i class="fa fa-1-5x fa-caret-left" aria-hidden="true"></i></p>
+			</a>
+			<span class="">Pagina <span>1</span> de <span>2</span></span>
+			<a id="right" href="#" class="btn btn-numerico">
+				<p><i class="fa fa-1-5x fa-caret-right" aria-hidden="true"></i></p>
+			</a>
+		</div>
+		<footer>
+			<a href="#" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+			<div>
+				<a href="#" class="btn btn-footer">
+					<p>Anterior</p>
+				</a>
+				<a href="#" class="btn btn-footer">
+					<p>Menú principal</p>
+				</a>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script>
+	////////////////////////////////////////////////////
+	///////////////////// SLIDER ///////////////////////
+	////////////////////////////////////////////////////
+		$( "#right" ).click(function() {
+			if ($("#left").hasClass("invisible")) {
+				$("#left").removeClass("invisible");
+			}
+			$(".slide1" ).animate({ "left": "-=1024px" }, "slow" );
+			$(".slide2" ).animate({ "left": "-=1024px" }, "slow" );
+			$("#right").toggleClass("invisible");
+		});
+		$( "#left" ).click(function(){
+			if ($("#right").hasClass("invisible")) {
+				$("#right").removeClass("invisible");
+			}
+			$(".slide1" ).animate({ "left": "+=1024px" }, "slow" );
+			$(".slide2" ).animate({ "left": "+=1024px" }, "slow" );
+			$("#left").toggleClass("invisible");
+		});
+	</script>
+</body>
+</html>

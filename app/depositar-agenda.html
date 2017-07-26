@@ -1,0 +1,95 @@
+@@include('_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="img/logo.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Depositar</h5>
+			<h1 class="titulo">Por favor, seleccioná un destinatario en agenda.</h1>
+		</div>
+		<div class="slider">
+			<div class="slide1 columnas">
+				<div class="col-1">
+					<a href="#" class="btn btn-principal">
+						<p>Colegio Flor<br><span class="font-light small-font">Titular: Instituto San Roque<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+					<a href="#" class="btn btn-principal">
+						<p>Hosting Inkus<br><span class="font-light small-font">Titular: Marcelo Cannes<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="#" class="btn btn-principal">
+						<p>Mamá<br><span class="font-light small-font">Titular: Ana Guzmán<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+					<a href="#" class="btn btn-principal">
+						<p>Veterinaria<br><span class="font-light small-font">Titular: Valeria Ruiz<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+				</div>
+				<div class="col-3">
+					<a href="#" class="btn btn-principal">
+						<p>Belu<br><span class="font-light small-font">Titular: Belén Gómez<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+					<a href="#" class="btn btn-principal">
+						<p>Facultad<br><span class="font-light small-font">Titular: FADU UBA<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+				</div>
+			</div>
+			<div class="slide2 columnas">
+				<div class="col-1">
+					<a href="#" class="btn btn-principal">
+						<p>Colegio Flor<br><span class="font-light small-font">Titular: Instituto San Roque<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="#" class="btn btn-principal">
+						<p>Mamá<br><span class="font-light small-font">Titular: Ana Guzmán<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+				</div>
+				<div class="col-3">
+					<a href="#" class="btn btn-principal">
+						<p>Belu<br><span class="font-light small-font">Titular: Belén Gómez<br>Nro: 0501 XXXXXX94 11</span></p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="paginado centrado">
+			<hr>
+			<a id="left" href="#" class="btn btn-numerico invisible">
+				<p><i class="fa fa-1-5x fa-caret-left" aria-hidden="true"></i></p>
+			</a>
+			<span class="">Pagina <span>1</span> de <span>2</span></span>
+			<a id="right" href="#" class="btn btn-numerico">
+				<p><i class="fa fa-1-5x fa-caret-right" aria-hidden="true"></i></p>
+			</a>
+		</div>
+		<footer>
+			<a href="#" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+		</footer>
+	</div>
+	<script src="js/jquery-1.12.4.js"></script>
+	<script>
+	////////////////////////////////////////////////////
+	///////////////////// SLIDER ///////////////////////
+	////////////////////////////////////////////////////
+		$( "#right" ).click(function() {
+			if ($("#left").hasClass("invisible")) {
+				$("#left").removeClass("invisible");
+			}
+			$(".slide1" ).animate({ "left": "-=1024px" }, "slow" );
+			$(".slide2" ).animate({ "left": "-=1024px" }, "slow" );
+			$("#right").toggleClass("invisible");
+		});
+		$( "#left" ).click(function(){
+			if ($("#right").hasClass("invisible")) {
+				$("#right").removeClass("invisible");
+			}
+			$(".slide1" ).animate({ "left": "+=1024px" }, "slow" );
+			$(".slide2" ).animate({ "left": "+=1024px" }, "slow" );
+			$("#left").toggleClass("invisible");
+		});
+	</script>
+</body>
+</html>
