@@ -1,0 +1,134 @@
+// Tamaños de pantalla
+$ancho_draw: 1024px;
+$centro_draw: $ancho_draw / 2;
+$alto_draw: 768px;
+
+// Colores
+$degrade_desde: #EFEFEE;
+$degrade_hasta: #FFFFFF;
+
+$blanco: #FFFFFF;
+$negro: #333333;
+$negro-claro: #50575C;
+$verde: #28A537;
+$gris: #6a6968;
+
+$background-click-btn-principal: #F8F8F8;
+$background-click-btn-salir: #020202;
+$background-click-btn-teclado-borrar: #D8D8D8;
+$background-click-btn-verde: #257F2D;
+
+// Definiciones de márgenes
+$tabla_de_margenes:(
+	0,
+	5,
+	10,
+	15,
+	20,
+	25,
+	30,
+	35,
+	40,
+	45,
+	50,
+	55,
+	60,
+	70,
+	75,
+	85,
+	100,
+	125,
+	130,
+	150,
+	175,
+	200,
+	);
+
+@each $margen in $tabla_de_margenes {
+	.mg-#{$margen} {margin: #{$margen}px;}
+	.mg-l-#{$margen} {margin-left: #{$margen}px;}
+	.mg-r-#{$margen} {margin-right: #{$margen}px;}
+	.mg-t-#{$margen} {margin-top: #{$margen}px}
+	.mg-b-#{$margen} {margin-bottom: #{$margen}px;}
+}
+
+// Fuentes
+$font-regular: "Roboto-Regular";
+$font-light: "Roboto-Light";
+$font-medium: "Roboto-Medium";
+$font-bold: "Roboto-Bold";
+
+$font-gustan-medium: "Gustan-Medium";
+$font-gustan-light: "Gustan-Light";
+$font-gustan-bold: "Gustan-Bold";
+
+$font-weight: 500;
+
+//ROBOTO FONT
+@font-face {
+	font-family: "Roboto-Regular";
+	src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+@font-face {
+	font-family: "Roboto-Light";
+	src: url("../fonts/roboto/Roboto-Light.ttf");
+}
+@font-face {
+	font-family: "Roboto-Medium";
+	src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+@font-face {
+	font-family: "Roboto-Bold";
+	src: url("../fonts/roboto/Roboto-Bold.ttf");
+}
+// GUSTAN FONT
+@font-face {
+	font-family: "Gustan-Light";
+	src: url('../fonts/gustan/gustanweb-light-webfont.eot');
+	src: url('../fonts/gustan/gustanweb-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gustan/gustanweb-light-webfont.woff2') format('woff2'),
+	url('../fonts/gustan/gustanweb-light-webfont.woff') format('woff'),
+	url('../fonts/gustan/gustanweb-light-webfont.ttf') format('truetype'),
+	url('../fonts/gustan/gustanweb-light-webfont.svg#webfontregular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gustan-Medium";
+	src: url('../fonts/gustan/gustanweb-medium-webfont.eot');
+	src: url('../fonts/gustan/gustanweb-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gustan/gustanweb-medium-webfont.woff2') format('woff2'),
+	url('../fonts/gustan/gustanweb-medium-webfont.woff') format('woff'),
+	url('../fonts/gustan/gustanweb-medium-webfont.ttf') format('truetype'),
+	url('../fonts/gustan/gustanweb-medium-webfont.svg#webfontregular') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gustan-Bold";
+	src: url('../fonts/gustan/gustanweb-bold-webfont.eot');
+	src: url('../fonts/gustan/gustanweb-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gustan/gustanweb-bold-webfont.woff2') format('woff2'),
+	url('../fonts/gustan/gustanweb-bold-webfont.woff') format('woff'),
+	url('../fonts/gustan/gustanweb-bold-webfont.ttf') format('truetype'),
+	url('../fonts/gustan/gustanweb-bold-webfont.svg#webfontregular') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+// SPINNER 
+$rojo-icbc: #AD1C1D;
+$spinner-width: 150px;
+
+// Clases de Colores
+.negro {color: $negro;}
+.negro-claro {color: $negro-claro;}
+.blanco {color: $blanco;}
+.verde {color: $verde;}
+.gris {color: $gris;}
+
+.invisible {
+	visibility: hidden;
+}

@@ -1,0 +1,152 @@
+/////////////////////////////
+////// TECLADO NUMERICO /////
+/////////////////////////////
+.teclado-numerico {
+	position: absolute;
+	top: 20px;
+	right: 85px;
+	.fila1,
+	.fila2,
+	.fila3, {
+		.btn-numerico {
+			&:nth-of-type(1) {
+				left: -10px;
+			}
+			&:nth-of-type(2) {
+				left: 0;
+			}
+			&:nth-of-type(3) {
+				left: 10px;
+			}
+		}
+	}
+
+	.fila4, {
+		.btn-numerico {
+			&:nth-of-type(1) {
+				left: -6px;
+			}
+		}
+		.btn-teclado-borrar {
+			left: 5px;
+		}
+	}
+
+	.fila2, .fila3, .fila4 {
+		margin-top: 10px;
+	}
+}
+
+.input-teclado {
+	margin-bottom: 30px;
+	width: 350px;
+	border-bottom: 1.4px solid $negro-claro;
+	input {
+		border-width: 0;
+		border-style: none;
+		border-color: transparent;
+		border-image: none;
+		background-color: transparent;
+		font-size: 25px;
+		color: $negro-claro;
+		text-align: left;
+		margin: 0 0 5px 0;
+		width: 100%;
+		&:focus {
+			outline-offset: 0;
+			outline: none;
+			outline-color: inherit;
+			outline-style: none;
+			outline-width: 0;
+		}
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			font-size: 20px;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+			font-size: 20px;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+			font-size: 20px;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			font-size: 20px;
+		}
+	}
+
+}
+
+/////////////////////////
+//////////VIDEOS///////// 
+/////////////////////////
+
+.video {
+	position: absolute;
+	right: 45px;
+	top: 250px;
+	video {
+		width: 450px;
+	}
+}
+
+/////////////////////////
+/////////SPINNER///////// 
+/////////////////////////
+.loader {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 75px;
+	width: $spinner-width;
+	&:before {
+		content: '';
+		display: block;
+		padding-top: 100%;
+	}
+}
+
+.circular {
+	animation: rotate 2s linear infinite;
+	height: 100%;
+	transform-origin: center center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.path {
+	stroke-dasharray: 1, 200;
+	stroke-dashoffset: 0;
+	animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+	stroke-linecap: round;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+	50% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -35px;
+	}
+	100% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -124px;
+	}
+}
+
+@keyframes color {
+	100%,
+	0% {
+		stroke: $rojo-icbc;
+	}
+}

@@ -1,0 +1,42 @@
+// Clases para las diferentes fuentes ROBOTO
+.font-regular {font-family: $font-regular;}
+.font-light {font-family: $font-light;}
+.font-medium {font-family: $font-medium;}
+.font-bold {font-family: $font-bold;}
+
+// Textos
+h1 { font-size: 37px; font-weight: $font-weight;}
+h2 { font-size: 32px; font-weight: $font-weight;}
+h3 { font-size: 27px; font-weight: $font-weight;}
+h4 { font-size: 25px; font-weight: $font-weight;}
+h5 { font-size: 20px; font-weight: $font-weight;}
+h6 { font-size: 14px; font-weight: $font-weight;}
+
+.centrado { text-align: center;}
+
+.interlineado { line-height: 1.5;}
+
+.small-font { font-size: 15px;}
+
+.big-font { font-size: 52px;}
+
+h5.subtitulo {
+	margin: 0;
+	padding-top: 25px;
+	font-family: $font-gustan-light;
+	font-weight: 200;
+	color: $negro-claro;
+}
+
+.titulo {
+	font-family: $font-gustan-medium;
+	font-weight: 500;
+}
+
+.titulo-bold {
+	font-family: $font-gustan-bold;
+	font-weight: 700;
+}
+a { text-decoration: none;}
+
+hr { width: 85%;}

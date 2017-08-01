@@ -1,0 +1,149 @@
+////////////////////////////
+///////// BOTONES //////////
+////////////////////////////
+.btn {
+	display: inline-block;
+	white-space: nowrap;
+	cursor: pointer;
+	border-color: transparent;
+	border-radius: 0;
+	position: relative;
+	p {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.btn-principal {
+	@extend .btn;
+	margin-top: 25px;
+	width: 255px;
+	height: 115px;
+	color: $negro;
+	font-size: 23px;
+	font-family: $font-bold;
+	background-color: $blanco;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+		background-color: $background-click-btn-principal;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+	span {
+		font-size: 20px;
+	}
+}
+
+.btn-numerico {
+	@extend .btn;
+	width: 73px;
+	height: 59px;
+	border-radius: 3px;
+	color: $negro;
+	font-size: 23px;
+	font-family: $font-bold;
+	background-color: $blanco;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+		background-color: $background-click-btn-principal;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+}
+
+.btn-teclado-borrar {
+	@extend .btn;
+	width: 169px;
+	height: 59px;
+	color: $negro;
+	border-radius: 3px;
+	background-color: $degrade_desde;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+		background-color: $background-click-btn-teclado-borrar;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+		color: $blanco;
+    }
+
+}
+
+.btn-derecha {
+	@extend .btn;
+	left: 7px;
+	top: 40px;
+	width: 196px;
+	height: 90px;
+	color: $negro-claro;
+	font-size: 24px;
+	font-family: $font-regular;
+	background-color: $blanco;
+	text-align: center;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+		background-color: $background-click-btn-principal;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+}
+
+.btn-si-no {
+	@extend .btn-derecha;
+	margin: 30px;
+	margin-top: 25px;
+	top: 0;
+	left: 0;
+}
+
+.btn-verde {
+	@extend .btn-derecha;
+	margin-top: 30px;
+	background-color: $verde;
+	color: $blanco;
+	font-family: $font-bold;
+	text-transform: uppercase;
+	&:active {
+		background-color: $background-click-btn-verde;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+}
+
+.btn-salir {
+	@extend .btn;
+	width: 196px;
+	height: 70px;
+	color: $blanco;
+	background-color: $negro;
+	font-family: $font-medium;
+	font-size: 24px;
+	position: absolute;
+	bottom: 25px;
+	left: 50px;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+    &:active {
+		background-color: $background-click-btn-salir;
+		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+		color: $blanco;
+    }
+}
+
+.btn-footer {
+	@extend .btn-salir;
+	color: $negro-claro;
+	background-color: $blanco;
+	font-family: $font-light;
+	font-size: 23.5px;
+	float: right;
+	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+	&:active {
+	color: $negro;
+	background-color: $background-click-btn-principal;
+	box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+	}
+	&:nth-of-type(1) {
+		left: 540px;
+	}
+	&:nth-of-type(2) {
+		left: 775px;
+		font-family: $font-medium;
+	}
+}

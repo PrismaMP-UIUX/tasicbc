@@ -126,11 +126,11 @@
 		</div>
 		<div class="paginado centrado">
 			<hr>
-			<a id="left" href="#" class="btn btn-paginado">
+			<a href="#" class="left btn btn-paginado invisible">
 				<p><i class="fa fa-1-5x fa-caret-left" aria-hidden="true"></i></p>
 			</a>
 			<span class="">Pagina <span>1</span> de <span>3</span></span>
-			<a id="right" href="#" class="btn btn-paginado">
+			<a href="#" class="right btn btn-paginado">
 				<p><i class="fa fa-1-5x fa-caret-right" aria-hidden="true"></i></p>
 			</a>
 		</div>
@@ -148,29 +148,5 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/jquery-1.12.4.js"></script>
-	<script>
-	////////////////////////////////////////////////////
-	///////////////////// SLIDER ///////////////////////
-	////////////////////////////////////////////////////
-		$( "#right" ).click(function() {
-			//if ($("#left").hasClass("invisible")) {
-			//	$("#left").removeClass("invisible");
-			//}
-			$(".slide1" ).animate({ "left": "-=1024px" }, "slow" );
-			$(".slide2" ).animate({ "left": "-=1024px" }, "slow" );
-			$(".slide3" ).animate({ "left": "-=1024px" }, "slow" );
-			//$("#right").toggleClass("invisible");
-		});
-		$( "#left" ).click(function(){
-			//if ($("#right").hasClass("invisible")) {
-			//	$("#right").removeClass("invisible");
-			//}
-			$(".slide1" ).animate({ "left": "+=1024px" }, "slow" );
-			$(".slide2" ).animate({ "left": "+=1024px" }, "slow" );
-			$(".slide3" ).animate({ "left": "+=1024px" }, "slow" );
-			//$("#left").toggleClass("invisible");
-		});
-	</script>
 </body>
 </html>
