@@ -78,4 +78,44 @@ $(document).ready(function(){
 	  $(this).addClass("pulse");
 	});
 
+	// DELAY PARA LA ANIMACION JELLO DEL CHECK VERDE
+	// ya que primero tiene el fade-in
+	$('.fa-check').delay(0).queue(function(){
+	  $(this).addClass("jello");
+	});
+
+	//MOSTRAR CHEQUE POR CHEQUE FLUJO SIN TAREJTA
+	// OJO!! Está hardcodeado para 4 cheques y para el flujo ST (sin tarjeta)
+	var total_cheques_st = 4;
+	var cheque_actual_st = 1;
+	$("body" ).on("click", ".siguiente-cheque-ST", function() {
+		if (cheque_actual_st < total_cheques_st){
+			cheque_actual_st++;
+			$(".clip").attr("src", "img/cheque"+cheque_actual_st+".jpg");
+			if (cheque_actual_st == total_cheques_st){
+				$(".siguiente-cheque-ST").replaceWith("<a href='depositar-monto-cheques-ST.html' class='btn btn-derecha btn-verde'><p>Aceptar</p></a>");
+				$(".siguiente-cheque-ST").delay(000).queue(function(){
+	  				$(this).addClass("pulse");
+				});
+			}
+		} 
+	});
+
+	//MOSTRAR CHEQUE POR CHEQUE FLUJO SIN TAREJTA
+	// OJO!! Está hardcodeado para 4 cheques y para el flujo CT (con tarjeta)
+	var total_cheques_ct = 4;
+	var cheque_actual_ct = 1;
+	$("body" ).on("click", ".siguiente-cheque-CT", function() {
+		if (cheque_actual_ct < total_cheques_ct){
+			cheque_actual_ct++;
+			$(".clip").attr("src", "img/cheque"+cheque_actual_ct+".jpg");
+			if (cheque_actual_ct == total_cheques_ct){
+				$(".siguiente-cheque-CT").replaceWith("<a href='depositar-monto-cheques-CT.html' class='btn btn-derecha btn-verde'><p>Aceptar</p></a>");
+				$(".siguiente-cheque-CT").delay(000).queue(function(){
+	  				$(this).addClass("pulse");
+				});
+			}
+		} 
+	});
+
 });

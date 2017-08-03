@@ -37,6 +37,12 @@ h5.subtitulo {
 	font-family: $font-gustan-bold;
 	font-weight: 700;
 }
-a { text-decoration: none;}
+
+a {
+	text-decoration: none;
+	&.flujo:visited, &.flujo {
+		color: $negro;
+	}
+}
 
 hr { width: 85%;}
