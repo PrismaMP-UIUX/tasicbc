@@ -72,12 +72,6 @@ $(document).ready(function(){
 		});
 	});
 
-	// DELAY PARA LA ANIMACION PULSE DEL BOTON VERDE
-	// ya que primero tiene el fade-in
-	$('.btn-verde').delay(1500).queue(function(){
-	  $(this).addClass("pulse");
-	});
-
 	// DELAY PARA LA ANIMACION JELLO DEL CHECK VERDE
 	// ya que primero tiene el fade-in
 	$('.fa-check').delay(0).queue(function(){

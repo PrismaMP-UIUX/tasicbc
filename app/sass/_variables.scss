@@ -18,7 +18,7 @@ $background-click-btn-salir: #020202;
 $background-click-btn-teclado-borrar: #D8D8D8;
 $background-click-btn-verde: #257F2D;
 
-// Definiciones de márgenes
+/* Definiciones de márgenes */
 $tabla_de_margenes:(
 	0,
 	5,
@@ -52,7 +52,7 @@ $tabla_de_margenes:(
 	.mg-b-#{$margen} {margin-bottom: #{$margen}px;}
 }
 
-// Fuentes
+/* Fuentes */
 $font-regular: "Roboto-Regular";
 $font-light: "Roboto-Light";
 $font-medium: "Roboto-Medium";
@@ -64,7 +64,7 @@ $font-gustan-bold: "Gustan-Bold";
 
 $font-weight: 500;
 
-//ROBOTO FONT
+/* ROBOTO FONT */
 @font-face {
 	font-family: "Roboto-Regular";
 	src: url("../fonts/roboto/Roboto-Regular.ttf");
@@ -81,7 +81,7 @@ $font-weight: 500;
 	font-family: "Roboto-Bold";
 	src: url("../fonts/roboto/Roboto-Bold.ttf");
 }
-// GUSTAN FONT
+/* GUSTAN FONT */
 @font-face {
 	font-family: "Gustan-Light";
 	src: url('../fonts/gustan/gustanweb-light-webfont.eot');
@@ -118,11 +118,11 @@ $font-weight: 500;
 	font-style: normal;
 }
 
-// SPINNER 
+// SPINNER
 $rojo-icbc: #AD1C1D;
 $spinner-width: 150px;
 
-// Clases de Colores
+/* Clases de Colores */
 .negro {color: $negro;}
 .negro-claro {color: $negro-claro;}
 .blanco {color: $blanco;}

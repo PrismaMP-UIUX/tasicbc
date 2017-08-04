@@ -75,12 +75,6 @@ header {
 		height: 310px;
 		overflow: hidden;
 		width: 330px;
-/* 		img {
-			position: relative;
-			top: 0;
-			right: 0;
-			height: 100%;
-		} */
 		.clip {
 			position: absolute;
 			top: 0;
@@ -131,6 +125,7 @@ header {
 	right: 0;
 }
 
+/* Esta estructura es de 3 columnas, para usar btn-principal */
 .columnas {
 	padding: 0 20px;
 	position: relative;
@@ -171,6 +166,7 @@ header {
 	}
 }
 
+/* Esta estructura es de 4 columnas, para usar btn-derecha */
 .columnas-servicios {
 	@extend .columnas;
 	padding: 0 60px;
@@ -191,6 +187,7 @@ header {
 	}
 }
 
+/* El slider deberá contener a .columnas o a .columnas-servicios */
 .slider {
 	position: absolute;
 	width: 1024px;
@@ -200,13 +197,13 @@ header {
 		position: absolute;
 		left: 1024px;
 	}
-
 	.slide3 {
 		position: absolute;
 		left: 2048px;
 	}
 }
 
+/* Paginado del slider */
 .paginado {
 	position: relative;
 	top: 425px;
