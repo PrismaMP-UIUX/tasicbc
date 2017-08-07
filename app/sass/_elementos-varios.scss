@@ -193,3 +193,17 @@
 		stroke: $rojo-icbc;
 	}
 }
+
+/* LINKS DEL FLUJO */
+//// Eliminar del archivo final ////
+//// Al igual que los links ////
+
+.link {
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: $negro;
+	&:visited, {
+		color: $negro-claro;
+	}
+}
