@@ -2,41 +2,42 @@
 <body>
 	<div class="container">
 		<header>
-			<img src="img/logo.svg">
+			<img src="img/iso.svg">
 		</header>
 		<div class="encabezado">
-			<h5 class="subtitulo">Pagar servicios: XXXX</h5>
+			<h5 class="subtitulo dinamico">Pagar servicios: {empresa}</h5>
 			<h2 class="titulo">Por favor, verificá los datos del servicio a pagar.</h2>
 		</div>
 		<div class="col-left">
-			<h3 class="font-regular negro-claro mg-b-10 mg-t-40">Nombre del servicio: <span class="font-medium">Gas Natural Fenosa</span></h3>
+			<h3 class="font-regular negro-claro mg-b-10 mg-t-40">Nombre del servicio: <span class="font-medium dinamico">{empresa}</span></h3>
 			<h3 class="font-regular negro-claro mg-b-10">Código de Pago: <span class="font-medium">XXXXXX XXXXXX XXXXXX</span></h3>
 			<h3 class="font-regular negro-claro mg-b-10">Monto a pagar: <span class="font-medium">$XXX</span></h3>
 		</div>
 		<div class="col-right">
 			<a href="#" class="btn btn-derecha invisible">
-				<p>Borrar todo</p>
+				<p></p>
 			</a>
 			<a href="#" class="btn btn-derecha invisible mg-t-75">
-				<p>Ingresá más <br>billetes</p>
+				<p></p>
 			</a>
-			<a href="#" class="btn btn-derecha btn-verde">
+			<a href="pagar-como-pagar-servicios-{flujo}.html?flujo={flujo}&empresa={empresa}" class="btn btn-derecha btn-verde">
 				<p>Confirmar</p>
 			</a>
 		</div>
 		<footer>
-			<a href="#" class="btn btn-salir">
+			<a href="salir-del-sistema.html" class="btn btn-salir">
 				<p>Salir</p>
 			</a>
 			<div>
-				<a href="#" class="btn btn-footer">
+				<a href="pagar-nuevo-servicio-codigo-de-pago.html?flujo={flujo}&empresa={empresa}" class="btn btn-footer">
 					<p>Anterior</p>
 				</a>
-				<a href="#" class="btn btn-footer-right">
+				<a href="menu-principal-CT.html" class="btn btn-footer-right">
 					<p>Menú principal</p>
 				</a>
 			</div>
 		</footer>
 	</div>
+@@include('_partials/script.html')
 </body>
 </html>

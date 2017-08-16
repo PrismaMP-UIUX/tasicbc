@@ -1,0 +1,50 @@
+@@include('_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="img/iso.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Depositar cheques</h5>
+			<h2 class="titulo">¿Cómo querés informar el monto depositado?</h2>
+		</div>
+		<div class="columnas">
+			<div class="col-1">
+				<a href="depositar-monto-total.html?flujo={flujo}" class="btn btn-principal">
+					<p>Monto total</p>
+				</a>
+			</div>
+			<div class="col-2">
+				<a href="depositar-cheque-x-cheque-total-{flujo}.html?flujo={flujo}" class="btn btn-principal">
+					<p>Cheque<br>por cheque</p>
+				</a>
+			</div>
+		</div>
+		<div class="col-right">
+			<a href="#" class="btn btn-derecha invisible">
+				<p></p>
+			</a>
+			<a href="#" class="btn btn-derecha mg-t-75 invisible">
+				<p></p>
+			</a>
+			<a href="depositar-tutorial-cheques.html?flujo={flujo}" class="btn btn-derecha">
+				<p>Ingresar más<br>cheques</p>
+			</a>
+		</div>
+		<footer>
+			<a href="salir-del-sistema.html" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+			<div>
+				<a href="#" class="btn btn-footer invisible">
+					<p></p>
+				</a>
+				<a href="menu-principal-{flujo}.html" class="btn btn-footer-right">
+					<p>Menú principal</p>
+				</a>
+			</div>
+		</footer>
+	</div>
+@@include('_partials/script.html')
+</body>
+</html>

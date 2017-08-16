@@ -76,6 +76,7 @@ header {
 		overflow: hidden;
 		width: 330px;
 		.clip {
+			filter: brightness(140%) contrast(90%);
 			position: absolute;
 			top: 0;
 			right: 0;

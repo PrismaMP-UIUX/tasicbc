@@ -35,25 +35,25 @@
 
 .subtitulo {
   @extend .fade-in;
-  animation-delay: 0s;
+          animation-delay: 0s;
   -webkit-animation-delay: 0s;
 }
 
 .titulo, .titulo-bold {
   @extend .fade-in;
-  animation-delay: 0.2s;
+          animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
 }
 
 h2, h3, h4, h5 {
   @extend .fade-in;
-  animation-delay: 0.2s;
+          animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
 }
 
 .col-left {
   @extend .fade-in;
-  animation-delay: 0.2s;
+          animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
 }
 
@@ -62,39 +62,39 @@ h2, h3, h4, h5 {
 .btn-principal {
   @extend .fade-in;
   .col-1 &:nth-of-type(1) {
-    animation-delay: 0.3s;
+            animation-delay: 0.3s;
     -webkit-animation-delay: 0.3s;
   }
   .col-2 &:nth-of-type(1) {
-    animation-delay: 0.4s;
+            animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
   }
   .col-3 &:nth-of-type(1) {
-    animation-delay: 0.5s;
+            animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
   }
   .col-1 &:nth-of-type(2) {
-    animation-delay: 0.6s;
+            animation-delay: 0.6s;
     -webkit-animation-delay: 0.6s;
   }
   .col-2 &:nth-of-type(2) {
-    animation-delay: 0.7s;
+            animation-delay: 0.7s;
     -webkit-animation-delay: 0.7s;
   }
   .col-3 &:nth-of-type(2) {
-    animation-delay: 0.8s;
+            animation-delay: 0.8s;
     -webkit-animation-delay: 0.8s;
   }
   .col-1 &:nth-of-type(3) {
-    animation-delay: 0.9s;
+            animation-delay: 0.9s;
     -webkit-animation-delay: 0.9s;
   }
   .col-2 &:nth-of-type(3) {
-    animation-delay: 1s;
+            animation-delay: 1s;
     -webkit-animation-delay: 1s;
   }
   .col-3 &:nth-of-type(3) {
-    animation-delay: 1.1s;
+            animation-delay: 1.1s;
     -webkit-animation-delay: 1.1s;
   }
 }
@@ -104,51 +104,51 @@ h2, h3, h4, h5 {
 .btn-derecha {
   @extend .fade-in;
   .columnas-servicios .col-1 &:nth-of-type(1) {
-    animation-delay: 0.3s;
+            animation-delay: 0.3s;
     -webkit-animation-delay: 0.3s;
   }
   .columnas-servicios .col-2 &:nth-of-type(1) {
-    animation-delay: 0.4s;
+            animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
   }
   .columnas-servicios .col-3 &:nth-of-type(1) {
-    animation-delay: 0.5s;
+            animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
   }
   .columnas-servicios .col-4 &:nth-of-type(1) {
-    animation-delay: 0.6s;
+            animation-delay: 0.6s;
     -webkit-animation-delay: 0.6s;
   }
   .columnas-servicios .col-1 &:nth-of-type(2) {
-    animation-delay: 0.7s;
+            animation-delay: 0.7s;
     -webkit-animation-delay: 0.7s;
   }
   .columnas-servicios .col-2 &:nth-of-type(2) {
-    animation-delay: 0.8s;
+            animation-delay: 0.8s;
     -webkit-animation-delay: 0.8s;
   }
   .columnas-servicios .col-3 &:nth-of-type(2) {
-    animation-delay: 0.9s;
+            animation-delay: 0.9s;
     -webkit-animation-delay: 0.9s;
   }
   .columnas-servicios .col-4 &:nth-of-type(2) {
-    animation-delay: 1s;
+            animation-delay: 1s;
     -webkit-animation-delay: 1s;
   }
   .columnas-servicios .col-1 &:nth-of-type(3) {
-    animation-delay: 1.1s;
+            animation-delay: 1.1s;
     -webkit-animation-delay: 1.1s;
   }
   .columnas-servicios .col-2 &:nth-of-type(3) {
-    animation-delay: 1.2s;
+            animation-delay: 1.2s;
     -webkit-animation-delay: 1.2s;
   }
   .columnas-servicios .col-3 &:nth-of-type(3) {
-    animation-delay: 1.3s;
+            animation-delay: 1.3s;
     -webkit-animation-delay: 1.3s;
   }
   .columnas-servicios .col-4 &:nth-of-type(3) {
-    animation-delay: 1.4s;
+            animation-delay: 1.4s;
     -webkit-animation-delay: 1.4s;
   }
 }
@@ -156,11 +156,11 @@ h2, h3, h4, h5 {
 .btn-derecha {
   @extend .fade-in;
   &:nth-of-type(1) {
-    animation-delay: 0.3s;
+            animation-delay: 0.3s;
     -webkit-animation-delay: 0.3s;
   }
   &:nth-of-type(2) {
-    animation-delay: 0.4s;
+            animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
   }
 }
@@ -173,18 +173,14 @@ h2, h3, h4, h5 {
 
 .btn-salir, .btn-footer, .btn-footer-right{
   @extend .fade-in;
-  animation-delay: 0.5s;
+          animation-delay: 0.5s;
   -webkit-animation-delay: 0.5s;
 }
 
 .paginado {
   @extend .fade-in;
-  animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation-delay: 1s;
-}
-
-.imagen {
-  @extend .fade-in;
 }
 
 .video {
@@ -197,7 +193,7 @@ h2, h3, h4, h5 {
 
 .fa-check {
   @extend .fade-in;
-  animation-delay: 0.3s;
+          animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
 }
 
@@ -396,14 +392,67 @@ h2, h3, h4, h5 {
   }
 }
 
-/* h5.centrado.interlineado {
-  @extend .pulse;
-} */
-
 .btn-verde {
   @extend .pulse;
 }
 
+/* SCALE UP */
+
+.scale-up {
+  -webkit-animation: scale-up 1s ease-in-out both;
+          animation: scale-up 1s ease-in-out both;
+}
+
+@-webkit-keyframes scale-up {
+  0% {
+    -webkit-transform: scale(0.0);
+            transform: scale(0.0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up {
+  0% {
+    -webkit-transform: scale(0.0);
+            transform: scale(0.0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* FLIP */
+
+.flip {
+  -webkit-animation: flip 2s linear infinite;
+          animation: flip 2s linear infinite;
+/*   -webkit-transform-style: preserve-3d; 
+          transform-style: preserve-3d; */
+}
+
+@-webkit-keyframes flip { 
+  from { 
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); 
+  } 
+  to { 
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg); 
+  } 
+}
+@keyframes flip { 
+  from {
+    -webkit-transform: rotateY(0deg); 
+            transform: rotateY(0deg); 
+  } 
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg); 
+  } 
+}
 
 /* JELLO */
 

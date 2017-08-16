@@ -1,0 +1,45 @@
+@@include('_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="img/iso.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Depositar</h5>
+			<h2 class="titulo">¿Qué vas a depositar?</h2>
+		</div>
+		<div class="columnas">
+			<div class="col-1">
+				<a href="depositar-tutorial-efectivo.html?flujo={flujo}&cta=" class="btn btn-principal">
+					<p>Efectivo</p>
+				</a>
+			</div>
+			<div class="col-2">
+				<a href="depositar-tutorial-cheques.html?flujo={flujo}&cta=" class="btn btn-principal">
+					<p>Cheque</p>
+				</a>
+			</div>
+		</div>
+		<!--
+		Este texto se incluye cuando el usuario YA REALIZÓ UN DEPÓSITO Y QUIERE REALIZAR OTRO EN LA MISMA CUENTA.
+		<h5 class="mg-l-50 font-regular text-bottom">Recordá que ya depositaste $XXXX.</h5>
+		-->
+		<footer>
+			<a href="salir-del-sistema.html" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+			<div>
+				<a href="depositar-confirmar-datos-cuenta.html?flujo={flujo}" class="btn btn-footer">
+					<p>Anterior</p>
+				</a>
+				<a href="menu-principal-{flujo}.html" class="btn btn-footer-right">
+					<p>Menú principal</p>
+				</a>
+			</div>
+		</footer>
+	</div>
+	<a class="font-bold link" href="pe11b-pantalla-2070-cash-in-depositos.html?flujo={flujo}"># Error módulo</a>
+	<a class="font-bold link" href="pe11-pantalla-2070-cash-in.html?flujo={flujo}"># No toma depósitos</a>
+@@include('_partials/script.html')
+</body>
+</html>
