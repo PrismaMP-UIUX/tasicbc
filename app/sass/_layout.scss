@@ -88,15 +88,16 @@ header {
 			position: absolute;
 			top: 0;
 			right: 250px;
-			height: 20%;
+			height: 12%;
+			box-shadow: 0px 0px 15px 12px rgba(28, 28, 27, 0.5);
 			width: 80px;
 			background-color: rgba(28, 28, 27, 0.5);
 		}
 		.mascara-bottom {
 			position: absolute;
-			bottom: 0;
-			right: 0;
+			bottom: 0px;
 			height: 80%;
+			box-shadow: 0 0 15px 15px rgba(28, 28, 27, 0.5);
 			width: 330px;
 			background-color: rgba(28, 28, 27, 0.5);
 		}
@@ -165,6 +166,19 @@ header {
 	.lista-cheques{
 		text-align: left;
 	}
+	// SOLO PARA columnas-centradas.html
+	&.centrado {
+		.fila1, .fila2, .fila3 {
+			.btn-principal {
+				margin: 25px 15px 0;
+			}
+		}
+		.fila1 {
+			.btn-principal{
+				margin-top: 40px;
+			}
+		}
+	}
 }
 
 /* Esta estructura es de 4 columnas, para usar btn-derecha */
@@ -186,6 +200,18 @@ header {
 			}
 		}
 	}
+	&.id-positiva {
+		.col-1, .col-2, .col-3, .col-4 {
+			.btn-derecha:first-of-type {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+h3.enmascarado.centrado {
+	position: relative;
+	top: 120px;
 }
 
 /* El slider deberá contener a .columnas o a .columnas-servicios */

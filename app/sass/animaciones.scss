@@ -2,7 +2,6 @@
 ///////////////////// ANIMACIONES /////////////////////////
 ///////////////////////////////////////////////////////////
 /* FADE IN */
-
 .fade-in {
   -webkit-animation: fade-in 1s 0.3s both;
           animation: fade-in 1s 0.3s both;
@@ -150,6 +149,38 @@ h2, h3, h4, h5 {
   .columnas-servicios .col-4 &:nth-of-type(3) {
             animation-delay: 1.4s;
     -webkit-animation-delay: 1.4s;
+  }
+  .columnas-servicios.id-positiva .col-1 &:nth-of-type(1) {
+            animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+  }
+  .columnas-servicios.id-positiva .col-4 &:nth-of-type(1) {
+            animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+  }
+  .columnas-servicios.id-positiva .col-1 &:nth-of-type(2) {
+            animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+  }
+  .columnas-servicios.id-positiva .col-4 &:nth-of-type(2) {
+            animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+  }
+  .columnas-servicios.id-positiva .col-1 &:nth-of-type(3) {
+            animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+  }
+  .columnas-servicios.id-positiva .col-4 &:nth-of-type(3) {
+            animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+  }
+  .columnas-servicios.id-positiva .col-1 &:nth-of-type(4) {
+            animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+  }
+  .columnas-servicios.id-positiva .col-4 &:nth-of-type(4) {
+            animation-delay: 1s;
+    -webkit-animation-delay: 1s;
   }
 }
 

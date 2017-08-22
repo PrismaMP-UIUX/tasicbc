@@ -1,0 +1,42 @@
+@@include('../../_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="../../img/iso.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Pagar XXXX (tarjeta/servicios) $XXXX</h5>
+			<h2 class="titulo">Por favor, confirmá el monto a debitar.</h2>
+		</div>
+		<div class="col-left">
+			<h2 class="font-regular gris mg-t-40">Monto total: <span class="font-medium">$XXXX</span></h2>
+			<h4 class="interlineado font-regular mg-t-25">Se debitará de XXXX (Caja de Ahorro en pesos $)</h4>
+		</div>
+		<div class="col-right">
+			<a href="#" class="btn btn-derecha invisible">
+				<p>Borrar todo</p>
+			</a>
+			<a href="#" class="btn btn-derecha mg-t-75 invisible">
+				<p></p>
+			</a>
+			<a href="pagar-comprobante.html?tarjeta={tarjeta}&Tarjeta={Tarjeta}" class="btn btn-derecha btn-verde">
+				<p>Confirmar</p>
+			</a>
+		</div>
+		<footer>
+			<a href="../generales/salir-del-sistema.html" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+			<div>
+				<a href="pagar-seleccionar-monto.html?tarjeta={tarjeta}&Tarjeta={Tarjeta}" class="btn btn-footer">
+					<p>Anterior</p>
+				</a>
+				<a href="../generales/menu-principal-CT.html" class="btn btn-footer-right">
+					<p>Menú principal</p>
+				</a>
+			</div>
+		</footer>
+	</div>
+@@include('../../_partials/script.html')
+</body>
+</html>

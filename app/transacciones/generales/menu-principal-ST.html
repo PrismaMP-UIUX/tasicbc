@@ -1,0 +1,46 @@
+@@include('../../_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="../../img/iso.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Menú principal</h5>
+			<h1 class="titulo centrado mg-t-20">¿Qué operación querés hacer?</h1>
+		</div>
+		<div class="columnas">
+			<div class="col-1">
+				<a href="../depositar/depositar-ingresar-datos.html?flujo=ST" class="btn btn-principal">
+					<p>Depositar</p>
+				</a>
+			</div>
+			<div class="col-2">
+				<a href="../pagar/pagart-seleccion-tipo-de-tarjeta-ST.html" class="btn btn-principal">
+					<p>Pagar <br><span class="font-light">tarjeta de crédito <br>ICBC</span></p>
+				</a>
+				
+			</div>
+			<div class="col-3">
+				<a href="../cuenta recaudadora/CR-sin-tarjeta.html" class="btn btn-principal">
+					<p>Cuenta recaudadora</p>
+				</a>
+				<a href="#" class="btn btn-principal invisible">
+					<p></p>
+				</a>
+				<a href="../identificacion/ingreso-de-tarjeta.html" class="btn btn-principal">
+					<p>Operar con<br><span class="font-light">tarjeta Visa Débito ICBC</span></p>
+				</a>
+			</div>
+		</div>
+		<h3 class="centrado font-light interlineado menu-text">Para otras operaciones ingresá tu <span class="font-medium">tarjeta Visa Débito ICBC.</span></h3>
+		<footer>
+			<a href="salir-del-sistema.html" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+		</footer>
+	</div>
+	<a class="font-bold link" href="../errores/pe11b-pantalla-2070-cash-in-depositos-ST.html"># Sólo ciertos depósitos</a>
+	<a class="font-bold link" href="../errores/pe11c-pantalla-2070-cash-in-pagos-ST.html"># No pagos en efectivo</a>
+@@include('../../_partials/script.html')
+</body>
+</html>

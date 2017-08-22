@@ -1,0 +1,51 @@
+@@include('../../_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="../../img/iso.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Menú principal</h5>
+			<h1 class="titulo centrado mg-t-20">¿Qué operación querés hacer?</h1>
+		</div>
+		<div class="columnas">
+			<div class="col-1">
+				<a href="../depositar/depositar-CT.html?flujo=CT" class="btn btn-principal">
+					<p>Depositar</p>
+				</a>
+				<a href="../consultar/consultar-cuentas-propias-seleccionar.html" class="btn btn-principal">
+					<p>Consultar</p>
+				</a>
+				<a href="../prestamos/prestamos-CT.html" class="btn btn-principal">
+					<p>Préstamos</p>
+				</a>
+			</div>
+			<div class="col-2">
+				<a href="../pagar/pagar-CT.html" class="btn btn-principal">
+					<p>Pagar</p>
+				</a>
+				<a href="../transferir/transferir-CT.html" class="btn btn-principal">
+					<p>Transferir</p>
+				</a>
+				<a href="../seguros/seguros-CT.html" class="btn btn-principal">
+					<p>Seguros</p>
+				</a>
+			</div>
+			<div class="col-3">
+				<a href="../extraer/extraer-CT.html" class="btn btn-principal">
+					<p>Extraer</p>
+				</a>
+			</div>
+		</div>
+		<footer>
+			<a href="salir-del-sistema.html" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+		</footer>
+	</div>
+	<a class="font-bold link" href="../errores/pe11b-pantalla-2070-cash-in-depositos.html"># Sólo ciertos depósitos</a>
+	<a class="font-bold link" href="../errores/pe11c-pantalla-2070-cash-in-pagos.html"># No pagos en efectivo</a>
+	<a class="font-bold link" href="../errores/pe20-sin-papel.html"># Sin papel</a>
+@@include('../../_partials/script.html')
+</body>
+</html>

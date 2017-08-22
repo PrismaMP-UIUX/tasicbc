@@ -1,5 +1,5 @@
 ///// FUNCION UTILIZADA PARA DINAMIZAR EL FLUJO /////
-///// No tener en cuenta para el proyecto final /////
+///// No tener en cuenta para el desarrollo /////
 
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
@@ -101,6 +101,9 @@ $(document).ready(function(){
 	$('.fa-check').delay(0).queue(function(){
 	  $(this).addClass("jello");
 	});
+	$('.fa-times').delay(0).queue(function(){
+	  $(this).addClass("jello");
+	});
 
 	//MOSTRAR CHEQUE POR CHEQUE - FLUJO SIN TAREJTA
 	// OJO!! Está hardcodeado para 4 cheques y para el flujo ST (sin tarjeta)
@@ -109,7 +112,7 @@ $(document).ready(function(){
 	$("body" ).on("click", ".siguiente-cheque-ST", function() {
 		if (cheque_actual_st < total_cheques_st){
 			cheque_actual_st++;
-			$(".clip").attr("src", "img/cheque"+cheque_actual_st+".bmp");
+			$(".clip").attr("src", "../../img/cheque"+cheque_actual_st+".bmp");
 			if (cheque_actual_st == total_cheques_st){
 				$(".siguiente-cheque-ST").replaceWith("<a href='depositar-monto-cheques.html?flujo=ST' class='btn btn-derecha btn-verde'><p>Aceptar</p></a>");
 				$(".siguiente-cheque-ST").delay(000).queue(function(){
@@ -126,7 +129,7 @@ $(document).ready(function(){
 	$("body" ).on("click", ".siguiente-cheque-CT", function() {
 		if (cheque_actual_ct < total_cheques_ct){
 			cheque_actual_ct++;
-			$(".clip").attr("src", "img/cheque"+cheque_actual_ct+".bmp");
+			$(".clip").attr("src", "../../img/cheque"+cheque_actual_ct+".bmp");
 			if (cheque_actual_ct == total_cheques_ct){
 				$(".siguiente-cheque-CT").replaceWith("<a href='depositar-monto-cheques.html?flujo=CT' class='btn btn-derecha btn-verde'><p>Aceptar</p></a>");
 				$(".siguiente-cheque-CT").delay(000).queue(function(){

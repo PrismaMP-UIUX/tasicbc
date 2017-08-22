@@ -1,0 +1,43 @@
+@@include('../../_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="../../img/iso.svg">
+		</header>
+		<div class="encabezado">
+			<h5 class="subtitulo">Depositar efectivo</h5>
+			<h2 class="titulo">Cómo ingresar los billetes.</h2>
+		</div>
+		<a class="link" href="depositar-monto-efectivo.html?flujo={flujo}&cta={cta}">
+			<div class="col-left">
+				<h5 class="font-regular mg-b-25 mg-t-70">Hasta 50/200 billetes  por operación (según modelo)</h5>
+				<h5 class="font-regular mg-b-25">Ingresá billetes en buen estado</h5>
+				<h5 class="font-regular mg-b-25">No pongas clips o bandas elásticas</h5>
+				<h5 class="font-regular mg-b-25">Si cancelás las operación, los billetes que ingreses <br>serán devueltos</h5>
+			</div>
+			<div class="video">
+				<video autoplay loop>
+					<source src="../../videos/2c. Efectivo en duales NCR.webm" type="video/webm">
+				</video>
+			</div>
+		</a>
+		<footer>
+			<a href="../generales/salir-del-sistema.html" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+			<div>
+				<a href="depositar-seleccion{cta}.html?flujo={flujo}&cta={cta}" class="btn btn-footer">
+					<p>Anterior</p>
+				</a>
+				<a href="../generales/menu-principal-{flujo}.html" class="btn btn-footer-right">
+					<p>Menú principal</p>
+				</a>
+			</div>
+		</footer>
+	</div>
+	<a class="font-bold link" href="../errores/pe12-ingreso-billetes-cheques.html?flujo={flujo}&cta={cta}"># Ingreso de billetes/cheques</a>
+	<!-- ESTA PANTALLA NO SE USARÁ <a class="font-bold link" href="../errores/pe13-billetes-cheques-retenidos.html?flujo={flujo}&cta={cta}"># Billetes/Cheques retenidos</a> -->
+	<a class="font-bold link" href="../errores/pe14-billetes-cheques-mal-estado.html?flujo={flujo}&cta={cta}"># Billetes/Cheques en mal estdo</a>
+@@include('../../_partials/script.html')
+</body>
+</html>

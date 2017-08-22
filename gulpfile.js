@@ -34,8 +34,8 @@ gulp.task('clean', function(){
 });
 
 gulp.task('html', function() {
-    // return gulp.src(['app/**/*.html', '!app/{_*,_**}'])
-    return gulp.src(['app/*.html'])
+    return gulp.src(['app/**/*.html', '!app/{_*,_**}'])
+    //return gulp.src(['app/**/*.html'])
         .pipe(embedlr())
         .pipe(include({prefix: '@@', basepath: '@file'}))
         .pipe(gulp.dest('../server/dist/'+config.name))
@@ -48,7 +48,7 @@ gulp.task('images', function() {
     return gulp.src(config.images+'**/*')
         .pipe(imagemin({optimizationLevel: 5}))
         .pipe(gulp.dest('../server/dist/'+config.name))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream());    
 });
 
 gulp.task('videos', function() {

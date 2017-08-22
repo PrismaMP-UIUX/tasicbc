@@ -1,0 +1,43 @@
+@@include('../../_partials/header.html')
+<body>
+	<div class="container">
+		<header>
+			<img src="../../img/iso.svg">
+		</header>
+			<div class="encabezado">
+			<h5 class="subtitulo">Depositar efectivo</h5>
+			<h2 class="titulo">Por favor, confirmá el monto de los billetes ingresados.</h2>
+		</div>
+		<div class="col-left">
+			<h3 class="font-regular negro-claro mg-t-40 mg-b-15">5 billetes de $100: <span class="font-medium">$500</span></h3>
+			<h3 class="font-regular negro-claro mg-b-15">3 billetes de $50: <span class="font-medium">$150</span></h3>
+			<h2 class="font-regular gris mg-t-40">Monto total: <span class="font-medium">$650</span></h2>
+		</div>
+		<div class="col-right">
+			<a href="#" class="btn btn-derecha invisible">
+				<p></p>
+			</a>
+			<a href="depositar-tutorial-efectivo.html?flujo={flujo}&cta={cta}" class="btn btn-derecha mg-t-75">
+				<p>Ingresar más<br>billetes</p>
+			</a>
+			<a href="depositar-comprobante.html?flujo={flujo}" class="btn btn-derecha btn-verde">
+				<p>Confirmar</p>
+			</a>
+		</div>
+		<footer>
+			<a href="../generales/salir-del-sistema.html" class="btn btn-salir">
+				<p>Salir</p>
+			</a>
+			<div>
+				<a href="#" class="btn btn-footer invisible">
+					<p></p>
+				</a>
+				<a href="../generales/menu-principal-{flujo}.html" class="btn btn-footer-right">
+					<p>Menú principal</p>
+				</a>
+			</div>
+		</footer>		
+	</div>
+@@include('../../_partials/script.html')
+</body>
+</html>

@@ -64,10 +64,18 @@
 .fa-caret-right:before {
 	content: "\f0da";
 }
+.fa-times:before {
+  content: "\f00d";
+}
 
 .fa-check {
 	margin-top: 25px;
 	color: $verde;
+}
+
+.fa-times {
+	margin-top: 25px;
+	color: $rojo-icbc;
 }
  
 .typcn:before {
