@@ -56,6 +56,10 @@ h2, h3, h4, h5 {
   -webkit-animation-delay: 0.2s;
 }
 
+.btn-alfabetico {
+  @extend .fade-in;
+}
+
 /* Botones principales incluyendo los del slider */
 
 .btn-principal {
@@ -230,7 +234,7 @@ h2, h3, h4, h5 {
 
 
 /* PULSE */
-
+/* 
 .pulse {
   -webkit-animation: pulse 30s ease-in-out both;
           animation: pulse 30s ease-in-out both;
@@ -253,72 +257,72 @@ h2, h3, h4, h5 {
     opacity: 1;
   }
   10% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   15% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   20% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   25% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   30% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   35% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   40% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   45% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   55% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   60% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   65% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   70% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   75% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   80% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   85% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   90% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   95% {
     -webkit-transform: scale(1);
@@ -346,72 +350,72 @@ h2, h3, h4, h5 {
     opacity: 1;
   }
   10% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   15% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   20% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   25% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   30% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   35% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   40% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   45% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   55% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   60% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   65% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   70% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   75% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   80% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   85% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
   90% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
   }
   95% {
     -webkit-transform: scale(1);
@@ -425,7 +429,7 @@ h2, h3, h4, h5 {
 
 .btn-verde {
   @extend .pulse;
-}
+} */
 
 /* SCALE UP */
 

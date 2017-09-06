@@ -1,17 +1,27 @@
-@@include('../../_partials/header.html')
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ICBC</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+	<!-- <link rel="stylesheet" type="text/css" href="css/animaciones.css" media="all"> -->
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
 <body>
 	<div class="container">
 		<header>
-			<img src="../../img/iso.svg">
+			<img src="img/iso.svg">
 		</header>
 		<div class="encabezado">
-			<h5 class="subtitulo">Extraer</h5>
-			<h2 class="titulo">Ingresá el monto. Tu límite de extracción es $XXXX.</h2>
+			<h5 class="subtitulo">Subtítulo</h5>
+			<h2 class="titulo">Título</h2>
 		</div>
 		<div class="col-left">
 			<div class="centrado teclado-numerico">
 				<div class="input-teclado">
-					<input placeholder="Monto a extraer $:"></input>
+					<input placeholder="Importe:"></input>
 				</div>
 				<div class="fila1">
 					<a href="#" class="btn btn-numerico mg-5">
@@ -57,14 +67,14 @@
 			</div>
 		</div>
 		<div class="col-right">
-			<a href="#" class="btn btn-derecha">
+			<a href="#" class="btn btn-derecha-top">
 				<p>Borrar todo</p>
 			</a>
-			<a href="#" class="btn btn-derecha invisible mg-t-75">
-				<p></p>
+			<a href="#" class="btn btn-derecha-center mg-t-75">
+				<p>Ingresar más<br>cheques/billetes</p>
 			</a>
-			<a href="#" class="btn btn-derecha btn-verde">
-				<p>Aceptar</p>
+			<a href="#" class="btn btn-derecha-bottom btn-verde">
+				<p>Botón<br>Verde</p>
 			</a>
 		</div>
 		<footer>

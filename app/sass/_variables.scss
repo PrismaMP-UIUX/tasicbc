@@ -53,14 +53,15 @@ $tabla_de_margenes:(
 }
 
 /* Fuentes */
-$font-regular: "Roboto-Regular";
-$font-light: "Roboto-Light";
-$font-medium: "Roboto-Medium";
-$font-bold: "Roboto-Bold";
+$font-regular: "Gustan-Book";
+$font-light: "Gustan-Light";
+$font-medium: "Gustan-Medium";
+$font-bold: "Gustan-Bold";
 
-$font-gustan-medium: "Gustan-Medium";
-$font-gustan-light: "Gustan-Light";
-$font-gustan-bold: "Gustan-Bold";
+$font-roboto-medium: "Roboto-Medium";
+$font-roboto-light: "Roboto-Light";
+$font-roboto-bold: "Roboto-Bold";
+$font-roboto-regular: "Roboto-Regular";
 
 $font-weight: 500;
 
@@ -117,6 +118,25 @@ $font-weight: 500;
 	font-weight: bold;
 	font-style: normal;
 }
+
+@font-face {
+    font-family: 'Gustan-Book';
+    src: url('../fonts/gustan/gustanweb-book-webfont.eot');
+    src: url('../fonts/gustan/gustanweb-book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gustan/gustanweb-book-webfont.woff2') format('woff2'),
+    url('../fonts/gustan/gustanweb-book-webfont.woff') format('woff'),
+    url('../fonts/gustan/gustanweb-book-webfont.ttf') format('truetype'),
+    url('../fonts/gustan/gustanweb-book-webfont.svg#webfontregular') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+// VIDEO CENTRADO
+// $video-centrado-width: 550px;
+// .video-centrado {
+// 	width: $video-centrado-width;
+// }
 
 // SPINNER
 $rojo-icbc: #AD1C1D;
