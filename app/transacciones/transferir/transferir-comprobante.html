@@ -8,22 +8,25 @@
 			<h5 class="subtitulo">Transferir</h5>
 		</div>
 		<p class="centrado"><i class="fa fa-check fa-6x" aria-hidden="true"></i></p>
+		<!-- En caso de TRANSFERENCIA A CUENTA PROPIA va solo el h1 de aca abajo -->
 		<h1 class="titulo-bold mg-20 centrado">La transferencia se realizó con éxito.</h1>
-		<h3 class="centrado negro-claro font-regular">Esta cuenta se guardó en tu agenda para futuras transferencias.</h3>
+		<!-- En caso de TRANSFERENCIA A NUEVO CBU se agrega el h3 de acá abajo -->
+		<!-- <h3 class="centrado negro-claro font-regular">Esta cuenta se guardó en tu agenda para futuras transacciones.</h3> -->
+		<!-- En caso de TRANSFERENCIA A CUENTA FRECUENTE se quita el h3 de arriba y se agrega el h3 de acá abajo -->
+		<!-- <h3 class="centrado negro-claro font-regular">Esta cuenta ya la tenés agendada.</h3> -->
+		<!-- EL MSJ DE RETIRAR EL COMPROBANTE VA SIEMPRE -->
 		<h3 class="centrado negro-claro font-regular">Por favor, retirá el comprobante.</h3>
 		<footer>
 			<a href="../generales/salir-del-sistema.html" class="btn btn-salir">
 				<p>Salir</p>
 			</a>
 			<div>
-				<a href="#" class="btn btn-footer invisible">
-					<p></p>
-				</a>
-				<a href="#" class="btn btn-footer-right">
+				<a href="../generales/menu-principal-CT.html" class="btn btn-footer-right">
 					<p>Menú principal</p>
 				</a>
 			</div>
 		</footer>
 	</div>
+@@include('../../_partials/script.html')
 </body>
 </html>

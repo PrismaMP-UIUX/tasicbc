@@ -6,21 +6,15 @@
 		</header>
 		<div class="encabezado">
 			<h5 class="subtitulo">Transferir</h5>
-			<h2 class="titulo">Por favor, confirmá los datos.</h2>
+			<h2 class="titulo">Por favor, confirmá los datos de la cuenta destino.</h2>
 		</div>
 		<div class="col-left">
 			<h4 class="font-regular negro-claro mg-b-15 mg-t-40">Titular: <span class="font-medium">XXXX</span></h4>
-			<h4 class="font-regular negro-claro mg-b-15 mg-t-15">Tipo de cuenta: <span class="font-medium">XXXX</span></h4>
-			<h4 class="font-regular negro-claro mg-b-15 mg-t-15">Número de cuenta: <span class="font-medium">XXXX</span></h4>
+			<h4 class="font-regular negro-claro mg-b-15 mg-t-15">Número de CBU: <span class="font-medium">XXXX</span></h4>
+			<h4 class="font-regular negro-claro mg-b-15 mg-t-15">CUIT/CUIL/CDI: <span class="font-medium">XXXX</span></h4>
 		</div>
 		<div class="col-right">
-			<a href="#" class="btn btn-derecha invisible">
-				<p>Borrar todo</p>
-			</a>
-			<a href="#" class="btn btn-derecha mg-t-75 invisible">
-				<p></p>
-			</a>
-			<a href="#" class="btn btn-derecha btn-verde">
+			<a href="transferir-concepto.html?flujo2={flujo2}" class="btn btn-derecha-bottom btn-verde">
 				<p>Confirmar</p>
 			</a>
 		</div>
@@ -29,14 +23,15 @@
 				<p>Salir</p>
 			</a>
 			<div>
-				<a href="#" class="btn btn-footer">
+				<a href="transferir-{flujo2}.html" class="btn btn-footer">
 					<p>Anterior</p>
 				</a>
-				<a href="#" class="btn btn-footer-right">
+				<a href="../generales/menu-principal-CT.html" class="btn btn-footer-right">
 					<p>Menú principal</p>
 				</a>
 			</div>
 		</footer>
 	</div>
+@@include('../../_partials/script.html')
 </body>
 </html>

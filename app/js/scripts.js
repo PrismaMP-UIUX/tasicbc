@@ -21,6 +21,8 @@ function searchToObject() {
 
   return obj;
 }
+////////////////////////////////////////////////////////
+
 
 $(document).ready(function(){
 	////////////////////////////////////////////////////
@@ -114,7 +116,7 @@ $(document).ready(function(){
 			cheque_actual_st++;
 			$(".clip").attr("src", "../../img/cheque"+cheque_actual_st+".bmp");
 			if (cheque_actual_st == total_cheques_st){
-				$(".siguiente-cheque-ST").replaceWith("<a href='depositar-monto-cheques.html?flujo=ST' class='btn btn-derecha btn-verde'><p>Aceptar</p></a>");
+				$(".siguiente-cheque-ST").replaceWith("<a href='depositar-monto-cheques.html?flujo=ST' class='btn btn-derecha-bottom btn-verde'><p>Aceptar</p></a>");
 				$(".siguiente-cheque-ST").delay(000).queue(function(){
 	  				$(this).addClass("pulse");
 				});
@@ -122,7 +124,7 @@ $(document).ready(function(){
 		} 
 	});
 
-	//MOSTRAR CHEQUE POR CHEQUE - FLUJO SIN TAREJTA
+	//MOSTRAR CHEQUE POR CHEQUE - FLUJO CON TAREJTA
 	// OJO!! Está hardcodeado para 4 cheques y para el flujo CT (con tarjeta)
 	var total_cheques_ct = 4;
 	var cheque_actual_ct = 1;
@@ -131,16 +133,12 @@ $(document).ready(function(){
 			cheque_actual_ct++;
 			$(".clip").attr("src", "../../img/cheque"+cheque_actual_ct+".bmp");
 			if (cheque_actual_ct == total_cheques_ct){
-				$(".siguiente-cheque-CT").replaceWith("<a href='depositar-monto-cheques.html?flujo=CT' class='btn btn-derecha btn-verde'><p>Aceptar</p></a>");
+				$(".siguiente-cheque-CT").replaceWith("<a href='depositar-monto-cheques.html?flujo=CT' class='btn btn-derecha-bottom btn-verde'><p>Aceptar</p></a>");
 				$(".siguiente-cheque-CT").delay(000).queue(function(){
 	  				$(this).addClass("pulse");
 				});
 			}
 		} 
 	});
-
-
-
-
 
 });
