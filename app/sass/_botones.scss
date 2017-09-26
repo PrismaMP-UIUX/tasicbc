@@ -22,7 +22,7 @@
 	width: 255px;
 	height: 115px;
 	color: $negro;
-	font-size: 23px;
+	font-size: 22px;
 	font-family: $font-bold;
 	background-color: $blanco;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
@@ -83,6 +83,9 @@
 	}
 	&:nth-child(3) {
 		top: 75px;
+	}
+	.centrado > & {
+		top: 0;
 	}
 }
 
@@ -219,4 +222,11 @@
 		background-color: $gris-claro;
 		box-shadow: none;
 	}
+}
+
+.btn-alfabetico {
+	@extend .btn-numerico;
+	width: 110px;
+	height: 80px;
+	margin: 10px 10px 20px 10px;
 }

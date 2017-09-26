@@ -60,6 +60,10 @@ h2, h3, h4, h5 {
   @extend .fade-in;
 }
 
+.guiones {
+  @extend .fade-in;
+}
+
 /* Botones principales incluyendo los del slider */
 
 .btn-principal {
@@ -239,6 +243,31 @@ h2, h3, h4, h5 {
   -webkit-animation-delay: 0.3s;
 }
 
+/* FLASH */
+.flash {
+  -webkit-animation: flash 0.5s linear infinite both;
+          animation: flash 0.5s linear infinite both;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 
 
 
@@ -275,29 +304,29 @@ h2, h3, h4, h5 {
 .flip {
   -webkit-animation: flip 2s linear infinite;
           animation: flip 2s linear infinite;
-/*   -webkit-transform-style: preserve-3d; 
+/*   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d; */
 }
 
-@-webkit-keyframes flip { 
-  from { 
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); 
-  } 
-  to { 
-    -webkit-transform: rotateY(-360deg);
-            transform: rotateY(-360deg); 
-  } 
-}
-@keyframes flip { 
+@-webkit-keyframes flip {
   from {
-    -webkit-transform: rotateY(0deg); 
-            transform: rotateY(0deg); 
-  } 
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
   to {
     -webkit-transform: rotateY(-360deg);
-            transform: rotateY(-360deg); 
-  } 
+            transform: rotateY(-360deg);
+  }
+}
+@keyframes flip {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
 }
 
 /* JELLO */
@@ -369,7 +398,7 @@ h2, h3, h4, h5 {
 }
 
 /* PULSE */
-/* 
+/*
 .pulse {
   -webkit-animation: pulse 30s ease-in-out both;
           animation: pulse 30s ease-in-out both;
