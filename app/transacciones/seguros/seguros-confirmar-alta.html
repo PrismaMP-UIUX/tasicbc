@@ -5,7 +5,7 @@
 			<img src="../../img/iso.svg">
 		</header>
 		<div class="encabezado">
-			<h5 class="subtitulo">Seguros: Alta Opción 1</h5>
+			<h5 class="subtitulo dinamico">Seguros: Alta {opcion}</h5>
 			<h2 class="titulo">Estás por dar de alta el siguiente seguro elegido.</h2>
 		</div>
 		<div class="col-left">
@@ -17,7 +17,7 @@
 			<h2 class="font-regular gris mg-t-40">Monto total a debitar: <span class="font-medium">$3,63</span></h2>
 		</div>
 		<div class="col-right">
-			<a href="#" class="btn btn-derecha-bottom btn-verde">
+			<a href="seguros-forma-de-pago.html?flujo={flujo}&opcion={opcion}" class="btn btn-derecha-bottom btn-verde">
 				<p>Aceptar</p>
 			</a>
 		</div>
@@ -26,14 +26,15 @@
 				<p>Salir</p>
 			</a>
 			<div>
-				<a href="#" class="btn btn-footer">
+				<a href="seguros-alta.html?flujo={flujo}" class="btn btn-footer">
 					<p>Anterior</p>
 				</a>
-				<a href="#" class="btn btn-footer-right">
+				<a href="../generales/menu-principal-CT.html" class="btn btn-footer-right">
 					<p>Menú principal</p>
 				</a>
 			</div>
 		</footer>
 	</div>
+@@include('../../_partials/script.html')
 </body>
 </html>

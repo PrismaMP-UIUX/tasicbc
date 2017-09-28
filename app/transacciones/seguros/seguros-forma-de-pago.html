@@ -5,22 +5,22 @@
 			<img src="../../img/iso.svg">
 		</header>
 		<div class="encabezado">
-			<h5 class="subtitulo">Seguros: Alta Opción 1</h5>
+			<h5 class="subtitulo dinamico">Seguros: Alta {opcion}</h5>
 			<h2 class="titulo">¿Sobre qué cuenta querés que se te debite el pago?</h2>
 		</div>
 		<div class="columnas">
 			<div class="col-1">
-				<a href="#" class="btn btn-principal">
+				<a href="seguros-tyc.html?flujo{flujo}&opcion={opcion}" class="btn btn-principal">
 					<p>Caja de Ahorro Pesos<br><span class="font-light">Nro: 0501 XXXXXX94 11</span></p>
 				</a>
 			</div>
 			<div class="col-2">
-				<a href="#" class="btn btn-principal">
+				<a href="seguros-tyc.html?flujo{flujo}&opcion={opcion}" class="btn btn-principal">
 					<p>Cuenta Corriente Pesos<br><span class="font-light">Nro: 0503 XXXXXX59 02</span></p>
 				</a>
 			</div>
 			<div class="col-3">
-				<a href="#" class="btn btn-principal">
+				<a href="seguros-tyc.html?flujo{flujo}&opcion={opcion}" class="btn btn-principal">
 					<p>Caja de Ahorro Dólares<br><span class="font-light">Nro: 2222 XXXXXX94 11</span></p>
 				</a>
 			</div>
@@ -30,14 +30,15 @@
 				<p>Salir</p>
 			</a>
 			<div>
-				<a href="#" class="btn btn-footer">
+				<a href="seguros-confirmar-alta.html?flujo={flujo}&opcion={opcion}" class="btn btn-footer">
 					<p>Anterior</p>
 				</a>
-				<a href="#" class="btn btn-footer-right">
+				<a href="../generales/menu-principal-CT.html" class="btn btn-footer-right">
 					<p>Menú principal</p>
 				</a>
 			</div>
 		</footer>
 	</div>
+@@include('../../_partials/script.html')
 </body>
 </html>
