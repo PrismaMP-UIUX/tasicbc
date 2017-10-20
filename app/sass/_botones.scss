@@ -24,7 +24,7 @@
 	color: $negro;
 	font-size: 22px;
 	font-family: $font-bold;
-	background-color: $blanco;
+	background-color: $gris-btn;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
 		background-color: $background-click-btn-principal;
@@ -42,7 +42,7 @@
 	color: $negro;
 	font-size: 23px;
 	font-family: $font-bold;
-	background-color: $blanco;
+	background-color: $gris-btn;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
 		background-color: $background-click-btn-principal;
@@ -55,7 +55,7 @@
 	height: 59px;
 	color: $negro;
 	border-radius: 3px;
-	background-color: $degrade_desde;
+	background-color: $gris-btn;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
 		background-color: $background-click-btn-teclado-borrar;
@@ -71,7 +71,7 @@
 	color: $negro-claro;
 	font-size: 24px;
 	font-family: $font-regular;
-	background-color: $blanco;
+	background-color: $gris-btn;
 	text-align: center;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
@@ -95,11 +95,11 @@
 	color: $negro-claro;
 	font-size: 24px;
 	font-family: $font-regular;
-	background-color: $blanco;
+	background-color: $gris-btn;
 	text-align: center;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
-		background-color: $background-click-btn-principal;
+		background-color: $background-click-btn-teclado-borrar;
 		box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
 	}
 	position: absolute;
@@ -112,7 +112,7 @@
 	color: $negro-claro;
 	font-size: 24px;
 	font-family: $font-regular;
-	background-color: $blanco;
+	background-color: $gris-btn;
 	text-align: center;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
@@ -129,7 +129,7 @@
 	color: $negro-claro;
 	font-size: 24px;
 	font-family: $font-regular;
-	background-color: $blanco;
+	background-color: $gris-btn;
 	text-align: center;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
@@ -147,7 +147,7 @@
 	color: $negro-claro;
 	font-size: 24px;
 	font-family: $font-regular;
-	background-color: $blanco;
+	background-color: $gris-btn;
 	text-align: center;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
@@ -182,7 +182,7 @@
 	@extend .btn-salir;
 	left: 540px;
 	color: $negro-claro;
-	background-color: $blanco;
+	background-color: $gris-btn;
 	font-family: $font-regular;
 	font-size: 23.5px;
 	float: right;
