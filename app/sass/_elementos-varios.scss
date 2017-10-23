@@ -104,6 +104,9 @@ img.imagen:nth-of-type(2) {
 	top: 170px;
 	display: flex;
 	justify-content: center;
+	&.identificacion {
+		top: 250px;
+	}
 }
 
 .video {

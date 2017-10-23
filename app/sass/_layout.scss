@@ -191,7 +191,6 @@ header {
 	.lista-cheques{
 		text-align: left;
 	}
-	// SOLO PARA columnas-centradas.html
 	&.centrado {
 		.fila1, .fila2, .fila3 {
 			.btn-principal {
@@ -233,7 +232,8 @@ header {
 		}
 	}
 	.btn p {
-		width: 186px;
+		font-size: 22px;
+		width: 170px;
 		word-wrap: normal;
 		white-space:normal;
 	}
@@ -244,54 +244,21 @@ h3.enmascarado.centrado {
 	top: 120px;
 }
 
-/* El slider deberá contener a .columnas o a .columnas-servicios */
 .slider {
-	position: absolute;
-	width: 1024px;
+	position: relative;
 	height: 450px;
 	overflow: hidden;
-	.slide2 {
-		position: absolute;
-		left: 1024px;
-	}
-	.slide3 {
-		position: absolute;
-		left: 2048px;
-	}
-	.slide4 {
-		position: absolute;
-		left: 3072px;
-	}
-	.slide5 {
-		position: absolute;
-		left: 4096px;
-	}
-	.slide6 {
-		position: absolute;
-		left: 5120px;
-	}
-	.slide7 {
-		position: absolute;
-		left: 6144px;
-	}
-	.slide8 {
-		position: absolute;
-		left: 7168px;
-	}
-	.slide9 {
-		position: absolute;
-		left: 8192px;
-	}
-	.slide10 {
-		position: absolute;
-		left: 9216px;
+	.slide {
+		position: relative;
+		float: left;
+		width: 1024px;
 	}
 }
 
 /* Paginado del slider */
 .paginado {
 	position: relative;
-	top: 425px;
+	bottom: 25px;
 	hr {
 		margin: 20px auto;
 	}
