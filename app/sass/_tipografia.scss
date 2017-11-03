@@ -1,4 +1,4 @@
-/* Clases para las diferentes fuentes ROBOTO */
+/* Clases para las diferentes fuentes GUSTAN */
 .font-regular {font-family: $font-regular;}
 .font-light {font-family: $font-light;}
 .font-medium {font-family: $font-medium;}
@@ -57,4 +57,10 @@ hr { width: 85%;}
 .menu-text {
 	position: relative;
 	bottom: 160px;
+}
+
+.stop-debit {
+	position: absolute;
+	bottom: 10px;
+	left: 150px;
 }
