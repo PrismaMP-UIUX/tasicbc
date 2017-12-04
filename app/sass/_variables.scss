@@ -14,7 +14,8 @@ $verde: #28A537;
 $gris: #6a6968;
 $gris-claro: #CECECE;
 $gris-header: #f3f3f3;
-$gris-btn: #EFEFEE;
+$gris-btn: #F4F4F4;
+$gris-btn-oscuro: #E3E3E3;
 
 $background-click-btn-principal: #D8D8D8;
 $background-click-btn-salir: #020202;
@@ -88,44 +89,44 @@ $font-weight: 500;
 /* GUSTAN FONT */
 @font-face {
 	font-family: "Gustan-Light";
-	src: url('../fonts/gustan/Gustan-Light.eot');
-	src: url('../fonts/gustan/Gustan-Light.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/gustan/Gustan-Light.woff2') format('woff2'),
-	url('../fonts/gustan/Gustan-Light.woff') format('woff'),
-	url('../fonts/gustan/Gustan-Light.ttf') format('truetype');
+	src: url('../fonts/gustan/Gustanlp-Light.eot');
+	src: url('../fonts/gustan/Gustanlp-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gustan/Gustanlp-Light.woff2') format('woff2'),
+	url('../fonts/gustan/Gustanlp-Light.woff') format('woff'),
+	url('../fonts/gustan/Gustanlp-Light.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Gustan-Medium";
-	src: url('../fonts/gustan/Gustan-Medium.eot');
-	src: url('../fonts/gustan/Gustan-Medium.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/gustan/Gustan-Medium.woff2') format('woff2'),
-	url('../fonts/gustan/Gustan-Medium.woff') format('woff'),
-	url('../fonts/gustan/Gustan-Medium.ttf') format('truetype');
+	src: url('../fonts/gustan/Gustanlp-Medium.eot');
+	src: url('../fonts/gustan/Gustanlp-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gustan/Gustanlp-Medium.woff2') format('woff2'),
+	url('../fonts/gustan/Gustanlp-Medium.woff') format('woff'),
+	url('../fonts/gustan/Gustanlp-Medium.ttf') format('truetype');
 	font-weight: 800;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Gustan-Bold";
-	src: url('../fonts/gustan/Gustan-Bold.eot');
-	src: url('../fonts/gustan/Gustan-Bold.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/gustan/Gustan-Bold.woff2') format('woff2'),
-	url('../fonts/gustan/Gustan-Bold.woff') format('woff'),
-	url('../fonts/gustan/Gustan-Bold.ttf') format('truetype');
+	src: url('../fonts/gustan/Gustanlp-Bold.eot');
+	src: url('../fonts/gustan/Gustanlp-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gustan/Gustanlp-Bold.woff2') format('woff2'),
+	url('../fonts/gustan/Gustanlp-Bold.woff') format('woff'),
+	url('../fonts/gustan/Gustanlp-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Gustan-Book';
-	src: url('../fonts/gustan/Gustan-Book.eot');
-	src: url('../fonts/gustan/Gustan-Book.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/gustan/Gustan-Book.woff2') format('woff2'),
-	url('../fonts/gustan/Gustan-Book.woff') format('woff'),
-	url('../fonts/gustan/Gustan-Book.ttf') format('truetype');
+	src: url('../fonts/gustan/Gustanlp-Book.eot');
+	src: url('../fonts/gustan/Gustanlp-Book.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/gustan/Gustanlp-Book.woff2') format('woff2'),
+	url('../fonts/gustan/Gustanlp-Book.woff') format('woff'),
+	url('../fonts/gustan/Gustanlp-Book.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 
@@ -149,6 +150,7 @@ $spinner-width: 150px;
 .gris {color: $gris;}
 .gris-header {color: $gris-header;}
 .gris-btn {color: $gris-btn;}
+.gris-btn-oscuro {color: $gris-btn-oscuro;}
 
 .invisible {
 	visibility: hidden;

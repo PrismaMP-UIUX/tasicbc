@@ -55,7 +55,7 @@
 	height: 59px;
 	color: $negro;
 	border-radius: 3px;
-	background-color: $gris-btn;
+	background-color: $gris-btn-oscuro;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
 		background-color: $background-click-btn-teclado-borrar;
@@ -95,7 +95,7 @@
 	color: $negro-claro;
 	font-size: 24px;
 	font-family: $font-regular;
-	background-color: $gris-btn;
+	background-color: $gris-btn-oscuro;
 	text-align: center;
 	box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
 	&:active {
@@ -229,4 +229,14 @@
 	width: 110px;
 	height: 80px;
 	margin: 10px 10px 20px 10px;
+	&.deshabilitado {
+		background-color: $gris-btn;
+		box-shadow: 0px 3px 16px 0px rgba(28, 28, 27, 0.32);
+		color: $negro;
+		pointer-events: none;
+	&:active {
+			background-color: $background-click-btn-principal;
+			box-shadow: 0px 2px 6px 0px rgba(28, 28, 27, 0.32);
+		}
+	}
 }

@@ -122,14 +122,14 @@ img.imagen:nth-of-type(2) {
 
 .teclado-id-alfa {
 	position: absolute;
-	top: 320px;
+	top: 350px;
 	left: 237px;
 	width: 550px;
 }
 
 .teclado-id-numerica {
 	position: absolute;
-	top: 320px;
+	top: 350px;
 	left: 237px;
 	width: 550px;
 }
@@ -140,10 +140,10 @@ img.imagen:nth-of-type(2) {
 	position: absolute;
 	letter-spacing: -0.09em;
 	&.id-alfa {
-		top: 270px;
+		top: 300px;
 	}
 	&.id-numerica {
-		top: 270px
+		top: 300px
 	}
 	span {
 		margin: 5px;
