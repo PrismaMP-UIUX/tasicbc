@@ -8,7 +8,8 @@
 .teclado-numerico {
 	position: absolute;
 	top: 20px;
-	right: 92px;
+	right: 88px;
+	width: 350px;
 	.fila1,
 	.fila2,
 	.fila3, {
@@ -144,6 +145,9 @@ img.imagen:nth-of-type(2) {
 	}
 	&.id-numerica {
 		top: 300px
+	}
+	&.pagos {
+		top: 250px;
 	}
 	span {
 		margin: 5px;
