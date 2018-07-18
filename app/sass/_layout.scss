@@ -46,6 +46,45 @@ header {
 	background: linear-gradient($degrade_desde, $degrade_hasta); /* Standard syntax (must be last) */
 }
 
+.absolute {
+	position: absolute !important;
+}
+
+// Position Absolute
+@for $posi from 0 through 200 {
+  // Del 0 al 200
+  .top-#{$posi} {top: #{$posi}px !important;}
+  .bottom-#{$posi} {bottom: #{$posi}px !important;}
+  .left-#{$posi} {left: #{$posi}px !important;}
+  .right-#{$posi} {right: #{$posi}px !important;}
+}
+	// Del 100 al 200 de a 50 cada uno
+// @for $posi-cincuenta from 100 through 200 {
+//     @if $posi-cincuenta % 50 == 0 {
+//         .top-#{$posi-cincuenta} {top: #{$posi-cincuenta}px !important;}
+//         .bottom-#{$posi-cincuenta} {bottom: #{$posi-cincuenta}px !important;}
+//         .left-#{$posi-cincuenta} {left: #{$posi-cincuenta}px !important;}
+//         .right-#{$posi-cincuenta} {right: #{$posi-cincuenta}px !important;}
+//     }
+// }
+
+@for $posi-neg from 0 through 100 {
+  // Posi-negativos
+  .top-neg-#{$posi-neg} {top: -#{$posi-neg}px !important;}
+  .bottom-neg-#{$posi-neg} {bottom: -#{$posi-neg}px !important;}
+  .left-neg-#{$posi-neg} {left: -#{$posi-neg}px !important;}
+  .right-neg-#{$posi-neg} {right: -#{$posi-neg}px !important;}
+}
+//Del 100 al 200 de a 50 cada uno
+// @for $posi-cincuenta-neg from 100 through 200 {
+//     @if $posi-cincuenta-neg % 50 == 0 {
+//         .top-neg-#{$posi-cincuenta-neg} {top: -#{$posi-cincuenta-neg}px !important;}
+//         .bottom-neg-#{$posi-cincuenta-neg} {bottom: -#{$posi-cincuenta-neg}px !important;}
+//         .left-neg-#{$posi-cincuenta-neg} {left: -#{$posi-cincuenta-neg}px !important;}
+//         .right-neg-#{$posi-cincuenta-neg} {right: -#{$posi-cincuenta-neg}px !important;}
+//     }
+// }
+
 .container {
 	height: $alto_draw;
 	padding-left: 0;
