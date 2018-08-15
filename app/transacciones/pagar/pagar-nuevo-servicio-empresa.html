@@ -121,5 +121,23 @@
 		</footer>
 	</div>
 @@include('../../_partials/script.html')
+<script>
+	$(document).ready(function(){
+
+    var queries = {};
+        $.each(window.location.search.substr(1).split('&'),function(c,q){
+        var i = q.split('=');
+        queries[i[0].toString()] = i[1].toString();
+        });
+        console.log(queries);
+
+    if (queries.flujo == "NS"){
+      $('a.btn-footer').attr("href", "pagar-nuevo-servicio-tutorial.html?flujo=NS&empresa={empresa}");
+		} else if (queries.flujo == "PS") {
+			$('a.btn-footer').attr("href", "pagar-nuevo-servicio-rubro.html?flujo={flujo}");
+		}
+
+	});
+</script>
 </body>
 </html>
